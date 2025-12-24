@@ -1,0 +1,16 @@
+digraph "signalHandler"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="signalHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Обработчик сигнала Ctrl+C."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Server::stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a07c45a7e101a3926d8f9685c3c5d14e4",tooltip="Остановить сервер"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Logger::log",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#aae6641d55199c941cf06d7d3fe25742b",tooltip="Записать сообщение в журнал"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Logger::getCurrentDateTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#afa6fae2318225a087949a2e2f408144c",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Logger::levelToString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#abffd3a5b9e2cfb2abc4f2c33b7694d6c",tooltip=" "];
+}

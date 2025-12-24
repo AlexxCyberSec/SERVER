@@ -1,0 +1,16 @@
+digraph "TEST"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Config::parseCommandLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#a16172ae32586080565dc11cee8629f01",tooltip="Парсинг параметров командной строки"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Config::showHelp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#a9bc1913287c38988af8e79c5f2dbae19",tooltip="Показать справку"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Config::showVersion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#a077256fc1e5e4d49b3155307c7e5af32",tooltip="Показать информацию о версии программы"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="resetGetopt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestConfig_8cpp.html#afbd0e1ef401f53824212ed5e14e21080",tooltip=" "];
+}

@@ -1,0 +1,79 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл src/main.cpp}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Главная функция сервера  
+
+
+{\ttfamily \#include \char`\"{}Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Server.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$csignal$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}{signal\+Handler}} (int signal)
+\begin{DoxyCompactList}\small\item\em Обработчик сигнала Ctrl+C. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServer}{Server}} $\ast$ \mbox{\hyperlink{main_8cpp_a516317d9a8fcc3a953415fb8b32cbdc2}{server\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главная функция сервера 
+
+\begin{DoxyAuthor}{Автор}
+Судариков А.\+В. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 1
+\mbox{\Hypertarget{main_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}\label{main_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}} 
+\index{main.cpp@{main.cpp}!signalHandler@{signalHandler}}
+\index{signalHandler@{signalHandler}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{signalHandler()}{signalHandler()}}
+{\footnotesize\ttfamily void signal\+Handler (\begin{DoxyParamCaption}\item[{int}]{signal }\end{DoxyParamCaption})}
+
+
+
+Обработчик сигнала Ctrl+C. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em signal} & Номер сигнала \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+% FIG 2
+Граф вызова функции\+:
+% FIG 3
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{main_8cpp_a516317d9a8fcc3a953415fb8b32cbdc2}\label{main_8cpp_a516317d9a8fcc3a953415fb8b32cbdc2}} 
+\index{main.cpp@{main.cpp}!serverInstance@{serverInstance}}
+\index{serverInstance@{serverInstance}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{serverInstance}{serverInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classServer}{Server}}$\ast$ server\+Instance = nullptr}
+

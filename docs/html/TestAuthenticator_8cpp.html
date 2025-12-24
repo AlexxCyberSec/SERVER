@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Сервер: Файл tests/TestAuthenticator.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Сервер<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа по ТиМП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл TestAuthenticator.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модульные тесты для класса <a class="el" href="classAuthenticator.html" title="Класс аутентификации">Authenticator</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;UnitTest++/UnitTest++.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="Authenticator_8h_source.html">../src/Authenticator.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для TestAuthenticator.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp__incl.png" border="0" usemap="#atests_2TestAuthenticator_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a88608af10ad7b14e8185aca18de619d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a88608af10ad7b14e8185aca18de619d1">TEST</a> (Authenticator_GenerateSalt_Format)</td></tr>
+<tr class="separator:a88608af10ad7b14e8185aca18de619d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1377b702f99099758cded4ac4fadd55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#ae1377b702f99099758cded4ac4fadd55">TEST</a> (Authenticator_GenerateSalt_Unique)</td></tr>
+<tr class="separator:ae1377b702f99099758cded4ac4fadd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a99bd87d42f883e49d9f82e68382e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a70a99bd87d42f883e49d9f82e68382e4">TEST</a> (Authenticator_IsValidHexString_Correct64)</td></tr>
+<tr class="separator:a70a99bd87d42f883e49d9f82e68382e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85d4158497ea98108327ce5c1613943"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#ab85d4158497ea98108327ce5c1613943">TEST</a> (Authenticator_IsValidHexString_Correct16)</td></tr>
+<tr class="separator:ab85d4158497ea98108327ce5c1613943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebaf9e3dcb6c0fb5672ad15386a1c77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a9ebaf9e3dcb6c0fb5672ad15386a1c77">TEST</a> (Authenticator_IsValidHexString_Lowercase)</td></tr>
+<tr class="separator:a9ebaf9e3dcb6c0fb5672ad15386a1c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55698d659821447d33da3b2e4903d8ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a55698d659821447d33da3b2e4903d8ba">TEST</a> (Authenticator_IsValidHexString_WrongLength)</td></tr>
+<tr class="separator:a55698d659821447d33da3b2e4903d8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564a4bd547b1eacd0a8bf6d557e1be48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a564a4bd547b1eacd0a8bf6d557e1be48">TEST</a> (Authenticator_IsValidHexString_InvalidChars)</td></tr>
+<tr class="separator:a564a4bd547b1eacd0a8bf6d557e1be48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5a350ff4d6b61d3329c0cf94868979"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#ace5a350ff4d6b61d3329c0cf94868979">TEST</a> (Authenticator_IsValidHexString_Empty)</td></tr>
+<tr class="separator:ace5a350ff4d6b61d3329c0cf94868979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647cc0f272303102a591553f709d4ead"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a647cc0f272303102a591553f709d4ead">TEST</a> (Authenticator_CalculateSHA256_ValidInput)</td></tr>
+<tr class="separator:a647cc0f272303102a591553f709d4ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d21113f54f5b5617d4f5693ee626b8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a4d21113f54f5b5617d4f5693ee626b8e">TEST</a> (Authenticator_CalculateSHA256_Deterministic)</td></tr>
+<tr class="separator:a4d21113f54f5b5617d4f5693ee626b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0af496f910152c55152a1ed115e1629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#ab0af496f910152c55152a1ed115e1629">TEST</a> (Authenticator_CalculateSHA256_EmptyPassword)</td></tr>
+<tr class="separator:ab0af496f910152c55152a1ed115e1629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef23cdab728c3838a13b2dda1e7f6d88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#aef23cdab728c3838a13b2dda1e7f6d88">TEST</a> (Authenticator_CalculateSHA256_LongPassword)</td></tr>
+<tr class="separator:aef23cdab728c3838a13b2dda1e7f6d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe8bc5d71eb7340764742669f07c7d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a7fe8bc5d71eb7340764742669f07c7d0">TEST</a> (Authenticator_VerifyHash_Correct)</td></tr>
+<tr class="separator:a7fe8bc5d71eb7340764742669f07c7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e429d819dc5b10b03a5d144fe8589d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a38e429d819dc5b10b03a5d144fe8589d">TEST</a> (Authenticator_VerifyHash_WrongPassword)</td></tr>
+<tr class="separator:a38e429d819dc5b10b03a5d144fe8589d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed21790073c9838a00d32dd871037174"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#aed21790073c9838a00d32dd871037174">TEST</a> (Authenticator_VerifyHash_WrongSalt)</td></tr>
+<tr class="separator:aed21790073c9838a00d32dd871037174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4129d5e914f1879d305df554a62e3bd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a4129d5e914f1879d305df554a62e3bd2">TEST</a> (Authenticator_VerifyHash_InvalidHashFormat)</td></tr>
+<tr class="separator:a4129d5e914f1879d305df554a62e3bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546893d985b9dc8cb76496bdfa2c141f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a546893d985b9dc8cb76496bdfa2c141f">TEST</a> (Authenticator_VerifyHash_CaseInsensitive)</td></tr>
+<tr class="separator:a546893d985b9dc8cb76496bdfa2c141f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a59f4d8c024fda68d9828fce0531602"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a2a59f4d8c024fda68d9828fce0531602">TEST</a> (Authenticator_VerifyHash_DifferentSaltsProduceDifferentHashes)</td></tr>
+<tr class="separator:a2a59f4d8c024fda68d9828fce0531602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568431034106acf92d9953f0d5e0f484"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#a568431034106acf92d9953f0d5e0f484">TEST</a> (Authenticator_FullAuthCycle)</td></tr>
+<tr class="separator:a568431034106acf92d9953f0d5e0f484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abddd3e7b4e4a888fbae5dbe5316f5986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#abddd3e7b4e4a888fbae5dbe5316f5986">TEST</a> (Authenticator_SpecialCharactersInPassword)</td></tr>
+<tr class="separator:abddd3e7b4e4a888fbae5dbe5316f5986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestAuthenticator_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция  <a href="TestAuthenticator_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Модульные тесты для класса <a class="el" href="classAuthenticator.html" title="Класс аутентификации">Authenticator</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Судариков А.В. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025 </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основная функция </p>
+
+</div>
+</div>
+<a id="a4d21113f54f5b5617d4f5693ee626b8e" name="a4d21113f54f5b5617d4f5693ee626b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d21113f54f5b5617d4f5693ee626b8e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_CalculateSHA256_Deterministic&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a4d21113f54f5b5617d4f5693ee626b8e_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a4d21113f54f5b5617d4f5693ee626b8e_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ab0af496f910152c55152a1ed115e1629" name="ab0af496f910152c55152a1ed115e1629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0af496f910152c55152a1ed115e1629">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_CalculateSHA256_EmptyPassword&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_ab0af496f910152c55152a1ed115e1629_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_ab0af496f910152c55152a1ed115e1629_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aef23cdab728c3838a13b2dda1e7f6d88" name="aef23cdab728c3838a13b2dda1e7f6d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef23cdab728c3838a13b2dda1e7f6d88">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_CalculateSHA256_LongPassword&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_aef23cdab728c3838a13b2dda1e7f6d88_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_aef23cdab728c3838a13b2dda1e7f6d88_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a647cc0f272303102a591553f709d4ead" name="a647cc0f272303102a591553f709d4ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a647cc0f272303102a591553f709d4ead">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_CalculateSHA256_ValidInput&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a647cc0f272303102a591553f709d4ead_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a647cc0f272303102a591553f709d4ead_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a568431034106acf92d9953f0d5e0f484" name="a568431034106acf92d9953f0d5e0f484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568431034106acf92d9953f0d5e0f484">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_FullAuthCycle&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a568431034106acf92d9953f0d5e0f484_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a568431034106acf92d9953f0d5e0f484_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a88608af10ad7b14e8185aca18de619d1" name="a88608af10ad7b14e8185aca18de619d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88608af10ad7b14e8185aca18de619d1">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_GenerateSalt_Format&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a88608af10ad7b14e8185aca18de619d1_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a88608af10ad7b14e8185aca18de619d1_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae1377b702f99099758cded4ac4fadd55" name="ae1377b702f99099758cded4ac4fadd55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1377b702f99099758cded4ac4fadd55">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_GenerateSalt_Unique&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_ae1377b702f99099758cded4ac4fadd55_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_ae1377b702f99099758cded4ac4fadd55_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ab85d4158497ea98108327ce5c1613943" name="ab85d4158497ea98108327ce5c1613943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85d4158497ea98108327ce5c1613943">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_IsValidHexString_Correct16&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_ab85d4158497ea98108327ce5c1613943_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_ab85d4158497ea98108327ce5c1613943_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a70a99bd87d42f883e49d9f82e68382e4" name="a70a99bd87d42f883e49d9f82e68382e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a99bd87d42f883e49d9f82e68382e4">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_IsValidHexString_Correct64&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a70a99bd87d42f883e49d9f82e68382e4_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a70a99bd87d42f883e49d9f82e68382e4_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ace5a350ff4d6b61d3329c0cf94868979" name="ace5a350ff4d6b61d3329c0cf94868979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5a350ff4d6b61d3329c0cf94868979">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_IsValidHexString_Empty&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_ace5a350ff4d6b61d3329c0cf94868979_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_ace5a350ff4d6b61d3329c0cf94868979_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a564a4bd547b1eacd0a8bf6d557e1be48" name="a564a4bd547b1eacd0a8bf6d557e1be48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564a4bd547b1eacd0a8bf6d557e1be48">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_IsValidHexString_InvalidChars&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a564a4bd547b1eacd0a8bf6d557e1be48_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a564a4bd547b1eacd0a8bf6d557e1be48_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a9ebaf9e3dcb6c0fb5672ad15386a1c77" name="a9ebaf9e3dcb6c0fb5672ad15386a1c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebaf9e3dcb6c0fb5672ad15386a1c77">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_IsValidHexString_Lowercase&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a9ebaf9e3dcb6c0fb5672ad15386a1c77_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a9ebaf9e3dcb6c0fb5672ad15386a1c77_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a55698d659821447d33da3b2e4903d8ba" name="a55698d659821447d33da3b2e4903d8ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55698d659821447d33da3b2e4903d8ba">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_IsValidHexString_WrongLength&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a55698d659821447d33da3b2e4903d8ba_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a55698d659821447d33da3b2e4903d8ba_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="abddd3e7b4e4a888fbae5dbe5316f5986" name="abddd3e7b4e4a888fbae5dbe5316f5986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abddd3e7b4e4a888fbae5dbe5316f5986">&#9670;&nbsp;</a></span>TEST() <span class="overload">[14/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_SpecialCharactersInPassword&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_abddd3e7b4e4a888fbae5dbe5316f5986_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_abddd3e7b4e4a888fbae5dbe5316f5986_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a546893d985b9dc8cb76496bdfa2c141f" name="a546893d985b9dc8cb76496bdfa2c141f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546893d985b9dc8cb76496bdfa2c141f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[15/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_VerifyHash_CaseInsensitive&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a546893d985b9dc8cb76496bdfa2c141f_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a546893d985b9dc8cb76496bdfa2c141f_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a7fe8bc5d71eb7340764742669f07c7d0" name="a7fe8bc5d71eb7340764742669f07c7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe8bc5d71eb7340764742669f07c7d0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[16/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_VerifyHash_Correct&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a7fe8bc5d71eb7340764742669f07c7d0_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a7fe8bc5d71eb7340764742669f07c7d0_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a2a59f4d8c024fda68d9828fce0531602" name="a2a59f4d8c024fda68d9828fce0531602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a59f4d8c024fda68d9828fce0531602">&#9670;&nbsp;</a></span>TEST() <span class="overload">[17/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_VerifyHash_DifferentSaltsProduceDifferentHashes&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a2a59f4d8c024fda68d9828fce0531602_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a2a59f4d8c024fda68d9828fce0531602_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4129d5e914f1879d305df554a62e3bd2" name="a4129d5e914f1879d305df554a62e3bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4129d5e914f1879d305df554a62e3bd2">&#9670;&nbsp;</a></span>TEST() <span class="overload">[18/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_VerifyHash_InvalidHashFormat&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a4129d5e914f1879d305df554a62e3bd2_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a4129d5e914f1879d305df554a62e3bd2_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a38e429d819dc5b10b03a5d144fe8589d" name="a38e429d819dc5b10b03a5d144fe8589d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e429d819dc5b10b03a5d144fe8589d">&#9670;&nbsp;</a></span>TEST() <span class="overload">[19/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_VerifyHash_WrongPassword&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_a38e429d819dc5b10b03a5d144fe8589d_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_a38e429d819dc5b10b03a5d144fe8589d_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aed21790073c9838a00d32dd871037174" name="aed21790073c9838a00d32dd871037174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed21790073c9838a00d32dd871037174">&#9670;&nbsp;</a></span>TEST() <span class="overload">[20/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Authenticator_VerifyHash_WrongSalt&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestAuthenticator_8cpp_aed21790073c9838a00d32dd871037174_cgraph.png" border="0" usemap="#aTestAuthenticator_8cpp_aed21790073c9838a00d32dd871037174_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

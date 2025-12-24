@@ -1,0 +1,44 @@
+\hypertarget{Config_8h_source}{}\doxysection{Config.\+h}
+\label{Config_8h_source}\index{src/Config.h@{src/Config.h}}
+\mbox{\hyperlink{Config_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef CONFIG\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define CONFIG\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18 \textcolor{keyword}{enum class} \mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{LogLevel}} \{}
+\DoxyCodeLine{19     \mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}{INFO}},       }
+\DoxyCodeLine{20     \mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9a059e9861e0400dfbe05c98a841f3f96b}{WARNING}},    }
+\DoxyCodeLine{21     \mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9abb1ca97ec761fc37101737ba0aa2e7c5}{ERROR}},      }
+\DoxyCodeLine{22     \mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9a99cd1c61610c76a57cb8d10d6df6b870}{CRITICAL}}    }
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{classConfig}{Config}} \{}
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30     std::string \mbox{\hyperlink{classConfig_a8fd56866c1145a8ec20385cbfd698d2b}{clientDbPath\_}};}
+\DoxyCodeLine{31     std::string \mbox{\hyperlink{classConfig_ab27f64e9cb9266026f0f9e9add86ed5f}{logFilePath\_}};}
+\DoxyCodeLine{32     uint16\_t \mbox{\hyperlink{classConfig_ad94493ff4ec5915fc1da57f775cdd9aa}{port\_}};}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{34 \textcolor{keyword}{public}:}
+\DoxyCodeLine{38     \mbox{\hyperlink{classConfig_abd0c571c116924871e30444b192b792a}{Config}}();}
+\DoxyCodeLine{39     }
+\DoxyCodeLine{46     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classConfig_a16172ae32586080565dc11cee8629f01}{parseCommandLine}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}** argv);}
+\DoxyCodeLine{47     }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{classConfig_aee39c9d565d914a287f87cf476c4d5ef}{setDefaults}}();}
+\DoxyCodeLine{52     }
+\DoxyCodeLine{53     \textcolor{comment}{// Геттеры (только объявления)}}
+\DoxyCodeLine{54     \textcolor{keyword}{const} std::string\& \mbox{\hyperlink{classConfig_a62746914a3654b276f281128a4c60c48}{getClientDbPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{55     \textcolor{keyword}{const} std::string\& \mbox{\hyperlink{classConfig_a1e1791f34e0f8c0e94d7c0906f523e8c}{getLogFilePath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{56     uint16\_t \mbox{\hyperlink{classConfig_a70684c8eddf0fe06002edba733f40e88}{getPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{57     }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{classConfig_a9bc1913287c38988af8e79c5f2dbae19}{showHelp}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* programName);}
+\DoxyCodeLine{63     }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{classConfig_a077256fc1e5e4d49b3155307c7e5af32}{showVersion}}();}
+\DoxyCodeLine{68 \};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CONFIG\_H}}
+
+\end{DoxyCode}

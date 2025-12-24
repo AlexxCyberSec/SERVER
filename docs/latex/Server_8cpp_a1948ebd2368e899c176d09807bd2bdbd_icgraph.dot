@@ -1,0 +1,18 @@
+digraph "le32_to_host_int"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="le32_to_host_int",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Server::processVectorData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#af6fd44b3730d5a774e877156e8bbe64c",tooltip="Обработать векторные данные"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Server::handleClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a1e0e064acb019cbe4c022857eed95a77",tooltip="Обработать клиента"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Server::mainLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a9bdb42db12b75864979c7849c7ee7e9f",tooltip="Главный цикл сервера"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Server::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#acec935535d1d5b58d95cf24678eac014",tooltip="Запустить сервер"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+}

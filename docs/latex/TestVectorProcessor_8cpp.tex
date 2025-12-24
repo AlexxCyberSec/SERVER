@@ -1,0 +1,173 @@
+\hypertarget{TestVectorProcessor_8cpp}{}\doxysection{Файл tests/\+Test\+Vector\+Processor.cpp}
+\label{TestVectorProcessor_8cpp}\index{tests/TestVectorProcessor.cpp@{tests/TestVectorProcessor.cpp}}
+
+
+Модульные тесты для класса \mbox{\hyperlink{classVectorProcessor}{Vector\+Processor}}.  
+
+
+{\ttfamily \#include \char`\"{}/usr/include/\+Unit\+Test++/\+Unit\+Test++.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Vector\+Processor.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+Граф включаемых заголовочных файлов для Test\+Vector\+Processor.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_afbe4f84358f0c70d2a6403dd32575241}{TEST}} (Calculate\+Sum\+\_\+\+Empty\+Vector)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_ae7f0bbe404be8f3cac807aa7b06498ba}{TEST}} (Calculate\+Sum\+\_\+\+Single\+Element)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_ac9f6288633b0d308ab6a6c94e0b2661d}{TEST}} (Calculate\+Sum\+\_\+\+Multiple\+Elements)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_a07ac8d789b3c525afe08b22f3f6956b2}{TEST}} (Calculate\+Sum\+\_\+\+Negative\+Numbers)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_a26a22bb0b6e9642ba95152d10d9db0dc}{TEST}} (Calculate\+Sum\+\_\+\+Mixed\+Signs)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_a5f45e45570375ded8107b8bd71a14e22}{TEST}} (Calculate\+Sum\+\_\+\+Max\+Int32)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_a22f800a09b0eb0b9369a495fac563090}{TEST}} (Calculate\+Sum\+\_\+\+Min\+Int32)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_aefe6a9f7036b88c1d87a063fcedc797f}{TEST}} (Calculate\+Sum\+\_\+\+Max\+Plus\+Zero)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_adbea7e8339fed2e0b0b6c41c89af1134}{TEST}} (Calculate\+Sum\+\_\+\+Near\+Max\+No\+Overflow)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_a08d9cd281a725a7800936bfb4b4abb2c}{TEST}} (Calculate\+Sum\+\_\+\+Overflow\+Positive)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_afd9c1b20b0b7ae0bab65662225342ff8}{TEST}} (Calculate\+Sum\+\_\+\+Overflow\+Negative)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_aae399e229ed5e8e23a2547a4ba4591dc}{TEST}} (Calculate\+Sum\+\_\+\+Course\+Example)
+\item 
+\mbox{\hyperlink{TestVectorProcessor_8cpp_a484b568c3db5701cb017dc8e8b80f415}{TEST}} (Calculate\+Sum\+\_\+\+Zero\+Vector)
+\item 
+int \mbox{\hyperlink{TestVectorProcessor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Модульные тесты для класса \mbox{\hyperlink{classVectorProcessor}{Vector\+Processor}}. 
+
+\begin{DoxyAuthor}{Автор}
+Судариков А.\+В. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{TestVectorProcessor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!main@{main}}
+\index{main@{main}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_aae399e229ed5e8e23a2547a4ba4591dc}\label{TestVectorProcessor_8cpp_aae399e229ed5e8e23a2547a4ba4591dc}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Course\+Example}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 1
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_afbe4f84358f0c70d2a6403dd32575241}\label{TestVectorProcessor_8cpp_afbe4f84358f0c70d2a6403dd32575241}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Empty\+Vector}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 2
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_a5f45e45570375ded8107b8bd71a14e22}\label{TestVectorProcessor_8cpp_a5f45e45570375ded8107b8bd71a14e22}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Max\+Int32}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 3
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_aefe6a9f7036b88c1d87a063fcedc797f}\label{TestVectorProcessor_8cpp_aefe6a9f7036b88c1d87a063fcedc797f}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Max\+Plus\+Zero}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 4
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_a22f800a09b0eb0b9369a495fac563090}\label{TestVectorProcessor_8cpp_a22f800a09b0eb0b9369a495fac563090}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Min\+Int32}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 5
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_a26a22bb0b6e9642ba95152d10d9db0dc}\label{TestVectorProcessor_8cpp_a26a22bb0b6e9642ba95152d10d9db0dc}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Mixed\+Signs}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 6
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_ac9f6288633b0d308ab6a6c94e0b2661d}\label{TestVectorProcessor_8cpp_ac9f6288633b0d308ab6a6c94e0b2661d}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Multiple\+Elements}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 7
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_adbea7e8339fed2e0b0b6c41c89af1134}\label{TestVectorProcessor_8cpp_adbea7e8339fed2e0b0b6c41c89af1134}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Near\+Max\+No\+Overflow}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 8
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_a07ac8d789b3c525afe08b22f3f6956b2}\label{TestVectorProcessor_8cpp_a07ac8d789b3c525afe08b22f3f6956b2}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Negative\+Numbers}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 9
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_afd9c1b20b0b7ae0bab65662225342ff8}\label{TestVectorProcessor_8cpp_afd9c1b20b0b7ae0bab65662225342ff8}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Overflow\+Negative}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 10
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_a08d9cd281a725a7800936bfb4b4abb2c}\label{TestVectorProcessor_8cpp_a08d9cd281a725a7800936bfb4b4abb2c}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Overflow\+Positive}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 11
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_ae7f0bbe404be8f3cac807aa7b06498ba}\label{TestVectorProcessor_8cpp_ae7f0bbe404be8f3cac807aa7b06498ba}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Single\+Element}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 12
+\mbox{\Hypertarget{TestVectorProcessor_8cpp_a484b568c3db5701cb017dc8e8b80f415}\label{TestVectorProcessor_8cpp_a484b568c3db5701cb017dc8e8b80f415}} 
+\index{TestVectorProcessor.cpp@{TestVectorProcessor.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestVectorProcessor.cpp@{TestVectorProcessor.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/13]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Calculate\+Sum\+\_\+\+Zero\+Vector}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 13

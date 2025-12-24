@@ -1,0 +1,33 @@
+digraph "Server::authenticateClient"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Server::authenticateClient",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Аутентифицировать клиента"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Authenticator::generateSalt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAuthenticator.html#aeb0de37f54c3fad7f3c5b5a6a3b09d91",tooltip="Сгенерировать соль"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Database::getPassword",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDatabase.html#a3ab40ca6f2e2b09ecd4763f7e0f34a22",tooltip="Получить пароль пользователя"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Logger::log",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#aae6641d55199c941cf06d7d3fe25742b",tooltip="Записать сообщение в журнал"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Logger::getCurrentDateTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#afa6fae2318225a087949a2e2f408144c",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Logger::levelToString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#abffd3a5b9e2cfb2abc4f2c33b7694d6c",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Server::recvString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#abd11bc61ea1ab256718377bfc1657f16",tooltip="Получить строку от клиента"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Server::sendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a76cb8b08c171e81211706ad7ba0b31df",tooltip="Отправить двоичные данные"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Server::sendString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a4353088403640608f6997fe43900357f",tooltip="Отправить строку клиенту"];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Database::userExists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDatabase.html#a95a1352bb6fde55da13337923799f98c",tooltip="Проверить существование пользователя"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Authenticator::verifyHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAuthenticator.html#a09d4d2ef72481a6c2bba6ea6cf9031a6",tooltip="Проверить хеш"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Authenticator::calculate\lSHA256",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAuthenticator.html#a214a9481e46fc0cc61aae3eb2143df51",tooltip="Вычислить SHA256 хеш от соли и пароля"];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Authenticator::isValidHex\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAuthenticator.html#acd786c7213e7bdf858f92fb7ce70e015",tooltip="Проверить hex строку"];
+}

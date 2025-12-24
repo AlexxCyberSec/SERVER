@@ -1,0 +1,296 @@
+\begin{theindex}
+
+  \item {$\sim$Logger}
+    \subitem {Logger}, \hyperpage{14}
+  \item {$\sim$Server}
+    \subitem {Server}, \hyperpage{17}
+
+  \indexspace
+
+  \item {authenticateClient}
+    \subitem {Server}, \hyperpage{17}
+  \item {Authenticator}, \hyperpage{5}
+    \subitem {calculateSHA256}, \hyperpage{5}
+    \subitem {generateSalt}, \hyperpage{6}
+    \subitem {isValidHexString}, \hyperpage{6}
+    \subitem {verifyHash}, \hyperpage{6}
+
+  \indexspace
+
+  \item {calculateSHA256}
+    \subitem {Authenticator}, \hyperpage{5}
+  \item {calculateSum}
+    \subitem {VectorProcessor}, \hyperpage{23}
+  \item {clientDbPath\_}
+    \subitem {Config}, \hyperpage{10}
+  \item {clients\_}
+    \subitem {Database}, \hyperpage{13}
+  \item {closeConnection}
+    \subitem {Server}, \hyperpage{18}
+  \item {Config}, \hyperpage{8}
+    \subitem {clientDbPath\_}, \hyperpage{10}
+    \subitem {Config}, \hyperpage{9}
+    \subitem {getClientDbPath}, \hyperpage{9}
+    \subitem {getLogFilePath}, \hyperpage{9}
+    \subitem {getPort}, \hyperpage{9}
+    \subitem {logFilePath\_}, \hyperpage{10}
+    \subitem {parseCommandLine}, \hyperpage{9}
+    \subitem {port\_}, \hyperpage{11}
+    \subitem {setDefaults}, \hyperpage{10}
+    \subitem {showHelp}, \hyperpage{10}
+    \subitem {showVersion}, \hyperpage{10}
+  \item {Config.h}
+    \subitem {CRITICAL}, \hyperpage{27}
+    \subitem {ERROR}, \hyperpage{27}
+    \subitem {INFO}, \hyperpage{27}
+    \subitem {LogLevel}, \hyperpage{27}
+    \subitem {WARNING}, \hyperpage{27}
+  \item {config\_}
+    \subitem {Server}, \hyperpage{21}
+  \item {CRITICAL}
+    \subitem {Config.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {Database}, \hyperpage{11}
+    \subitem {clients\_}, \hyperpage{13}
+    \subitem {getClientCount}, \hyperpage{11}
+    \subitem {getPassword}, \hyperpage{12}
+    \subitem {loadFromFile}, \hyperpage{12}
+    \subitem {userExists}, \hyperpage{12}
+  \item {database\_}
+    \subitem {Server}, \hyperpage{21}
+
+  \indexspace
+
+  \item {ERROR}
+    \subitem {Config.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {generateSalt}
+    \subitem {Authenticator}, \hyperpage{6}
+  \item {getClientCount}
+    \subitem {Database}, \hyperpage{11}
+  \item {getClientDbPath}
+    \subitem {Config}, \hyperpage{9}
+  \item {getCurrentDateTime}
+    \subitem {Logger}, \hyperpage{14}
+  \item {getLogFilePath}
+    \subitem {Config}, \hyperpage{9}
+  \item {getPassword}
+    \subitem {Database}, \hyperpage{12}
+  \item {getPort}
+    \subitem {Config}, \hyperpage{9}
+
+  \indexspace
+
+  \item {handleClient}
+    \subitem {Server}, \hyperpage{18}
+  \item {host\_to\_le32}
+    \subitem {Server.cpp}, \hyperpage{32}
+  \item {host\_to\_le32\_int}
+    \subitem {Server.cpp}, \hyperpage{32}
+
+  \indexspace
+
+  \item {INFO}
+    \subitem {Config.h}, \hyperpage{27}
+  \item {initializeNetwork}
+    \subitem {Server}, \hyperpage{18}
+  \item {isRunning}
+    \subitem {Server}, \hyperpage{18}
+  \item {isValidHexString}
+    \subitem {Authenticator}, \hyperpage{6}
+
+  \indexspace
+
+  \item {le32\_to\_host}
+    \subitem {Server.cpp}, \hyperpage{33}
+  \item {le32\_to\_host\_int}
+    \subitem {Server.cpp}, \hyperpage{33}
+  \item {levelToString}
+    \subitem {Logger}, \hyperpage{14}
+  \item {loadFromFile}
+    \subitem {Database}, \hyperpage{12}
+  \item {log}
+    \subitem {Logger}, \hyperpage{15}
+  \item {logFile\_}
+    \subitem {Logger}, \hyperpage{15}
+  \item {logFilePath\_}
+    \subitem {Config}, \hyperpage{10}
+    \subitem {Logger}, \hyperpage{15}
+  \item {Logger}, \hyperpage{13}
+    \subitem {$\sim$Logger}, \hyperpage{14}
+    \subitem {getCurrentDateTime}, \hyperpage{14}
+    \subitem {levelToString}, \hyperpage{14}
+    \subitem {log}, \hyperpage{15}
+    \subitem {logFile\_}, \hyperpage{15}
+    \subitem {logFilePath\_}, \hyperpage{15}
+    \subitem {Logger}, \hyperpage{14}
+    \subitem {logSystemError}, \hyperpage{15}
+  \item {logger\_}
+    \subitem {Server}, \hyperpage{22}
+  \item {LogLevel}
+    \subitem {Config.h}, \hyperpage{27}
+  \item {logSystemError}
+    \subitem {Logger}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{31}
+    \subitem {TestAuthenticator.cpp}, \hyperpage{37}
+    \subitem {TestConfig.cpp}, \hyperpage{41}
+    \subitem {TestDatabase.cpp}, \hyperpage{44}
+    \subitem {TestLogger.cpp}, \hyperpage{46}
+    \subitem {TestVectorProcessor.cpp}, \hyperpage{49}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{31}
+    \subitem {serverInstance}, \hyperpage{32}
+    \subitem {signalHandler}, \hyperpage{31}
+  \item {mainLoop}
+    \subitem {Server}, \hyperpage{19}
+  \item {MAX\_INT32}
+    \subitem {VectorProcessor}, \hyperpage{24}
+  \item {MIN\_INT32}
+    \subitem {VectorProcessor}, \hyperpage{24}
+
+  \indexspace
+
+  \item {parseCommandLine}
+    \subitem {Config}, \hyperpage{9}
+  \item {port\_}
+    \subitem {Config}, \hyperpage{11}
+  \item {processVectorData}
+    \subitem {Server}, \hyperpage{19}
+  \item {processVectors}
+    \subitem {VectorProcessor}, \hyperpage{23}
+
+  \indexspace
+
+  \item {recvAll}
+    \subitem {Server}, \hyperpage{19}
+  \item {recvString}
+    \subitem {Server}, \hyperpage{20}
+  \item {resetGetopt}
+    \subitem {TestConfig.cpp}, \hyperpage{41}
+  \item {running\_}
+    \subitem {Server}, \hyperpage{22}
+
+  \indexspace
+
+  \item {sendAll}
+    \subitem {Server}, \hyperpage{20}
+  \item {sendString}
+    \subitem {Server}, \hyperpage{20}
+  \item {Server}, \hyperpage{16}
+    \subitem {$\sim$Server}, \hyperpage{17}
+    \subitem {authenticateClient}, \hyperpage{17}
+    \subitem {closeConnection}, \hyperpage{18}
+    \subitem {config\_}, \hyperpage{21}
+    \subitem {database\_}, \hyperpage{21}
+    \subitem {handleClient}, \hyperpage{18}
+    \subitem {initializeNetwork}, \hyperpage{18}
+    \subitem {isRunning}, \hyperpage{18}
+    \subitem {logger\_}, \hyperpage{22}
+    \subitem {mainLoop}, \hyperpage{19}
+    \subitem {processVectorData}, \hyperpage{19}
+    \subitem {recvAll}, \hyperpage{19}
+    \subitem {recvString}, \hyperpage{20}
+    \subitem {running\_}, \hyperpage{22}
+    \subitem {sendAll}, \hyperpage{20}
+    \subitem {sendString}, \hyperpage{20}
+    \subitem {Server}, \hyperpage{17}
+    \subitem {serverSocket\_}, \hyperpage{22}
+    \subitem {start}, \hyperpage{21}
+    \subitem {stop}, \hyperpage{21}
+  \item {Server.cpp}
+    \subitem {host\_to\_le32}, \hyperpage{32}
+    \subitem {host\_to\_le32\_int}, \hyperpage{32}
+    \subitem {le32\_to\_host}, \hyperpage{33}
+    \subitem {le32\_to\_host\_int}, \hyperpage{33}
+  \item {serverInstance}
+    \subitem {main.cpp}, \hyperpage{32}
+  \item {serverSocket\_}
+    \subitem {Server}, \hyperpage{22}
+  \item {setDefaults}
+    \subitem {Config}, \hyperpage{10}
+  \item {showHelp}
+    \subitem {Config}, \hyperpage{10}
+  \item {showVersion}
+    \subitem {Config}, \hyperpage{10}
+  \item {signalHandler}
+    \subitem {main.cpp}, \hyperpage{31}
+  \item {src/Authenticator.cpp}, \hyperpage{25}
+  \item {src/Authenticator.h}, \hyperpage{25, 26}
+  \item {src/Config.cpp}, \hyperpage{26}
+  \item {src/Config.h}, \hyperpage{26, 27}
+  \item {src/Database.cpp}, \hyperpage{28}
+  \item {src/Database.h}, \hyperpage{28, 29}
+  \item {src/Logger.cpp}, \hyperpage{29}
+  \item {src/Logger.h}, \hyperpage{29, 30}
+  \item {src/main.cpp}, \hyperpage{30}
+  \item {src/Server.cpp}, \hyperpage{32}
+  \item {src/Server.h}, \hyperpage{33, 34}
+  \item {src/VectorProcessor.cpp}, \hyperpage{35}
+  \item {src/VectorProcessor.h}, \hyperpage{35}
+  \item {start}
+    \subitem {Server}, \hyperpage{21}
+  \item {stop}
+    \subitem {Server}, \hyperpage{21}
+
+  \indexspace
+
+  \item {TEST}
+    \subitem {TestAuthenticator.cpp}, \hyperpage{37--39}
+    \subitem {TestConfig.cpp}, \hyperpage{41--43}
+    \subitem {TestDatabase.cpp}, \hyperpage{44, 45}
+    \subitem {TestLogger.cpp}, \hyperpage{47, 48}
+    \subitem {TestVectorProcessor.cpp}, \hyperpage{49--51}
+  \item {TestAuthenticator.cpp}
+    \subitem {main}, \hyperpage{37}
+    \subitem {TEST}, \hyperpage{37--39}
+  \item {TestConfig.cpp}
+    \subitem {main}, \hyperpage{41}
+    \subitem {resetGetopt}, \hyperpage{41}
+    \subitem {TEST}, \hyperpage{41--43}
+  \item {TestDatabase.cpp}
+    \subitem {main}, \hyperpage{44}
+    \subitem {TEST}, \hyperpage{44, 45}
+  \item {TestLogger.cpp}
+    \subitem {main}, \hyperpage{46}
+    \subitem {TEST}, \hyperpage{47, 48}
+  \item {tests/TestAuthenticator.cpp}, \hyperpage{36}
+  \item {tests/TestConfig.cpp}, \hyperpage{40}
+  \item {tests/TestDatabase.cpp}, \hyperpage{43}
+  \item {tests/TestLogger.cpp}, \hyperpage{46}
+  \item {tests/TestVectorProcessor.cpp}, \hyperpage{48}
+  \item {TestVectorProcessor.cpp}
+    \subitem {main}, \hyperpage{49}
+    \subitem {TEST}, \hyperpage{49--51}
+
+  \indexspace
+
+  \item {userExists}
+    \subitem {Database}, \hyperpage{12}
+
+  \indexspace
+
+  \item {VectorProcessor}, \hyperpage{22}
+    \subitem {calculateSum}, \hyperpage{23}
+    \subitem {MAX\_INT32}, \hyperpage{24}
+    \subitem {MIN\_INT32}, \hyperpage{24}
+    \subitem {processVectors}, \hyperpage{23}
+    \subitem {willOverflowAdd}, \hyperpage{23}
+  \item {verifyHash}
+    \subitem {Authenticator}, \hyperpage{6}
+
+  \indexspace
+
+  \item {WARNING}
+    \subitem {Config.h}, \hyperpage{27}
+  \item {willOverflowAdd}
+    \subitem {VectorProcessor}, \hyperpage{23}
+
+\end{theindex}

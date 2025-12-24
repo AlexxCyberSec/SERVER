@@ -1,0 +1,24 @@
+# Бинарные файлы
+*.o
+server
+*.exe
+*.out
+
+# Лог-файлы
+*.log
+
+# Временные файлы
+test1.log
+test2.log
+app.log
+custom.log
+server_test.log
+
+# Скомпилированные объекты
+*.obj
+*.so
+*.dylib
+
+# Резервные копии
+*~
+*.bak

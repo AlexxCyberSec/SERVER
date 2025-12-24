@@ -1,0 +1,42 @@
+digraph "Logger::log"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Logger::log",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Записать сообщение в журнал"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Server::authenticateClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a6dc14b0e6f6865527086a52146ee865c",tooltip="Аутентифицировать клиента"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Server::handleClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a1e0e064acb019cbe4c022857eed95a77",tooltip="Обработать клиента"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Server::mainLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a9bdb42db12b75864979c7849c7ee7e9f",tooltip="Главный цикл сервера"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Server::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#acec935535d1d5b58d95cf24678eac014",tooltip="Запустить сервер"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Logger::logSystemError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#ae027aff232c4965d2fa11f6b84855d2e",tooltip="Записать системную ошибку"];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Server::initializeNetwork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a3c1e05dddae7f9dd0d6b80c9cd931f36",tooltip="Инициализировать сетевое соединение"];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestLogger_8cpp.html#a829673a24e28fe5e8ae2a2ed6e8eaf9c",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Server::processVectorData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#af6fd44b3730d5a774e877156e8bbe64c",tooltip="Обработать векторные данные"];
+  Node10 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Server::stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a07c45a7e101a3926d8f9685c3c5d14e4",tooltip="Остановить сервер"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="signalHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ad2e59c7203b3bddc1bc9a2224b52e8e7",tooltip="Обработчик сигнала Ctrl+C."];
+  Node12 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Server::~Server",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a4b3aa2579cb1c8cd1d069582c14d0fa6",tooltip="Деструктор"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestLogger_8cpp.html#ac825eb1e23064b77146c4dea09b7dbce",tooltip=" "];
+}

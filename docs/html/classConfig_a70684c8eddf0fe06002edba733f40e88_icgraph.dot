@@ -1,0 +1,20 @@
+digraph "Config::getPort"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Config::getPort",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Server::initializeNetwork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a3c1e05dddae7f9dd0d6b80c9cd931f36",tooltip="Инициализировать сетевое соединение"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Server::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#acec935535d1d5b58d95cf24678eac014",tooltip="Запустить сервер"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Server::Server",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a8a12b2004e6bd89fef85d9a1e71fa8fc",tooltip="Конструктор"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestConfig_8cpp.html#ac75c9e8cffac61a111d71727003110d7",tooltip=" "];
+}

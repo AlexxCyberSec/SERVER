@@ -1,0 +1,14 @@
+digraph "TEST"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Database::getPassword",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDatabase.html#a3ab40ca6f2e2b09ecd4763f7e0f34a22",tooltip="Получить пароль пользователя"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Database::loadFromFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDatabase.html#a273bf69f3fa1ccfb4ceaf34f6cb2cc07",tooltip="Загрузить базу из файла"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Database::userExists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDatabase.html#a95a1352bb6fde55da13337923799f98c",tooltip="Проверить существование пользователя"];
+}

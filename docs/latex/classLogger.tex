@@ -1,0 +1,149 @@
+\hypertarget{classLogger}{}\doxysection{Класс Logger}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+Класс логирования  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogger_a1b6f85fa59af240a94e8d3de35b7c0cf}{Logger}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}{$\sim$\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_aae6641d55199c941cf06d7d3fe25742b}{log}} (\mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level, const std\+::string \&message, const std\+::string \&details=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Записать сообщение в журнал \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_ae027aff232c4965d2fa11f6b84855d2e}{log\+System\+Error}} (const std\+::string \&context)
+\begin{DoxyCompactList}\small\item\em Записать системную ошибку \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLogger_abffd3a5b9e2cfb2abc4f2c33b7694d6c}{level\+To\+String}} (\mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level) const
+\item 
+std\+::string \mbox{\hyperlink{classLogger_afa6fae2318225a087949a2e2f408144c}{get\+Current\+Date\+Time}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLogger_acbab2d537fc77e2c29bb33b4a0c76343}{log\+File\+Path\+\_\+}}
+\item 
+std\+::ofstream \mbox{\hyperlink{classLogger_a5c9ddc336e7adfd7e8d1a85c93778127}{log\+File\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс логирования 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classLogger_a1b6f85fa59af240a94e8d3de35b7c0cf}\label{classLogger_a1b6f85fa59af240a94e8d3de35b7c0cf}} 
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Path} & Путь к файлу журнала \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}\label{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}} 
+\index{Logger@{Logger}!````~Logger@{$\sim$Logger}}
+\index{````~Logger@{$\sim$Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{$\sim$Logger()}{~Logger()}}
+{\footnotesize\ttfamily Logger\+::$\sim$\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор 
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classLogger_afa6fae2318225a087949a2e2f408144c}\label{classLogger_afa6fae2318225a087949a2e2f408144c}} 
+\index{Logger@{Logger}!getCurrentDateTime@{getCurrentDateTime}}
+\index{getCurrentDateTime@{getCurrentDateTime}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getCurrentDateTime()}{getCurrentDateTime()}}
+{\footnotesize\ttfamily std\+::string Logger\+::get\+Current\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Граф вызова функции\+:
+% FIG 0
+\mbox{\Hypertarget{classLogger_abffd3a5b9e2cfb2abc4f2c33b7694d6c}\label{classLogger_abffd3a5b9e2cfb2abc4f2c33b7694d6c}} 
+\index{Logger@{Logger}!levelToString@{levelToString}}
+\index{levelToString@{levelToString}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{levelToString()}{levelToString()}}
+{\footnotesize\ttfamily std\+::string Logger\+::level\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Граф вызова функции\+:
+% FIG 1
+\mbox{\Hypertarget{classLogger_aae6641d55199c941cf06d7d3fe25742b}\label{classLogger_aae6641d55199c941cf06d7d3fe25742b}} 
+\index{Logger@{Logger}!log@{log}}
+\index{log@{log}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Logger\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{details = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Записать сообщение в журнал 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em level} & Уровень \\
+\hline
+{\em message} & Сообщение \\
+\hline
+{\em details} & Детали \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+% FIG 2
+Граф вызова функции\+:
+% FIG 3
+\mbox{\Hypertarget{classLogger_ae027aff232c4965d2fa11f6b84855d2e}\label{classLogger_ae027aff232c4965d2fa11f6b84855d2e}} 
+\index{Logger@{Logger}!logSystemError@{logSystemError}}
+\index{logSystemError@{logSystemError}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logSystemError()}{logSystemError()}}
+{\footnotesize\ttfamily void Logger\+::log\+System\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{context }\end{DoxyParamCaption})}
+
+
+
+Записать системную ошибку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em context} & Контекст \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+% FIG 4
+Граф вызова функции\+:
+% FIG 5
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classLogger_a5c9ddc336e7adfd7e8d1a85c93778127}\label{classLogger_a5c9ddc336e7adfd7e8d1a85c93778127}} 
+\index{Logger@{Logger}!logFile\_@{logFile\_}}
+\index{logFile\_@{logFile\_}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logFile\_}{logFile\_}}
+{\footnotesize\ttfamily std\+::ofstream Logger\+::log\+File\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLogger_acbab2d537fc77e2c29bb33b4a0c76343}\label{classLogger_acbab2d537fc77e2c29bb33b4a0c76343}} 
+\index{Logger@{Logger}!logFilePath\_@{logFilePath\_}}
+\index{logFilePath\_@{logFilePath\_}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logFilePath\_}{logFilePath\_}}
+{\footnotesize\ttfamily std\+::string Logger\+::log\+File\+Path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Logger_8h}{Logger.\+h}}\item 
+src/\mbox{\hyperlink{Logger_8cpp}{Logger.\+cpp}}\end{DoxyCompactItemize}

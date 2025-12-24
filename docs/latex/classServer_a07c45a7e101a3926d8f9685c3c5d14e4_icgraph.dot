@@ -1,0 +1,14 @@
+digraph "Server::stop"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Server::stop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Остановить сервер"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="signalHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ad2e59c7203b3bddc1bc9a2224b52e8e7",tooltip="Обработчик сигнала Ctrl+C."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Server::~Server",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a4b3aa2579cb1c8cd1d069582c14d0fa6",tooltip="Деструктор"];
+}

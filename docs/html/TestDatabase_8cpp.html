@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Сервер: Файл tests/TestDatabase.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Сервер<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа по ТиМП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл TestDatabase.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модульные тесты для класса <a class="el" href="classDatabase.html" title="Класс базы данных клиентов">Database</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;UnitTest++/UnitTest++.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="Database_8h_source.html">../src/Database.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для TestDatabase.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp__incl.png" border="0" usemap="#atests_2TestDatabase_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a164d6fa8a8d6f7602ceb2864a8b989b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#a164d6fa8a8d6f7602ceb2864a8b989b1">TEST</a> (Database_LoadFromFile_ValidFile)</td></tr>
+<tr class="separator:a164d6fa8a8d6f7602ceb2864a8b989b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb11c3e5568177fb5ea1a0b40390401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#a0fb11c3e5568177fb5ea1a0b40390401">TEST</a> (Database_LoadFromFile_WithComments)</td></tr>
+<tr class="separator:a0fb11c3e5568177fb5ea1a0b40390401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c814826eebc3ada66a115ce31ef8565"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#a7c814826eebc3ada66a115ce31ef8565">TEST</a> (Database_LoadFromFile_InvalidLines)</td></tr>
+<tr class="separator:a7c814826eebc3ada66a115ce31ef8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fb2ec01b70d53929f6f5333900bbd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#ac5fb2ec01b70d53929f6f5333900bbd6">TEST</a> (Database_UserExists)</td></tr>
+<tr class="separator:ac5fb2ec01b70d53929f6f5333900bbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af863ff95d6cf15b65489c319044e6f0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#af863ff95d6cf15b65489c319044e6f0a">TEST</a> (Database_GetPassword)</td></tr>
+<tr class="separator:af863ff95d6cf15b65489c319044e6f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa902d0ab8cbb8181ce2dc598b93c00d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#aa902d0ab8cbb8181ce2dc598b93c00d6">TEST</a> (Database_LoadFromFile_EmptyFile)</td></tr>
+<tr class="separator:aa902d0ab8cbb8181ce2dc598b93c00d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5156a37551b3b5d04ad4e90738fcea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#ad5156a37551b3b5d04ad4e90738fcea1">TEST</a> (Database_LoadFromFile_NonexistentFile)</td></tr>
+<tr class="separator:ad5156a37551b3b5d04ad4e90738fcea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dd27b516713a3aafadbdc1dd78d9cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#a82dd27b516713a3aafadbdc1dd78d9cd">TEST</a> (Database_LoadFromFile_Reload)</td></tr>
+<tr class="separator:a82dd27b516713a3aafadbdc1dd78d9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe66f12e8b7ccd4a17edd9cb1a1c54c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#afe66f12e8b7ccd4a17edd9cb1a1c54c0">TEST</a> (Database_LoadFromFile_TrimSpaces)</td></tr>
+<tr class="separator:afe66f12e8b7ccd4a17edd9cb1a1c54c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2fbe23ffed20404811bf66f573c405"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#a9a2fbe23ffed20404811bf66f573c405">TEST</a> (Database_CaseSensitive)</td></tr>
+<tr class="separator:a9a2fbe23ffed20404811bf66f573c405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestDatabase_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция  <a href="TestDatabase_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Модульные тесты для класса <a class="el" href="classDatabase.html" title="Класс базы данных клиентов">Database</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Судариков А.В. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025 </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основная функция </p>
+
+</div>
+</div>
+<a id="a9a2fbe23ffed20404811bf66f573c405" name="a9a2fbe23ffed20404811bf66f573c405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2fbe23ffed20404811bf66f573c405">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_CaseSensitive&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_a9a2fbe23ffed20404811bf66f573c405_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_a9a2fbe23ffed20404811bf66f573c405_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="af863ff95d6cf15b65489c319044e6f0a" name="af863ff95d6cf15b65489c319044e6f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af863ff95d6cf15b65489c319044e6f0a">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_GetPassword&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_af863ff95d6cf15b65489c319044e6f0a_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_af863ff95d6cf15b65489c319044e6f0a_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aa902d0ab8cbb8181ce2dc598b93c00d6" name="aa902d0ab8cbb8181ce2dc598b93c00d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa902d0ab8cbb8181ce2dc598b93c00d6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_EmptyFile&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_aa902d0ab8cbb8181ce2dc598b93c00d6_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_aa902d0ab8cbb8181ce2dc598b93c00d6_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a7c814826eebc3ada66a115ce31ef8565" name="a7c814826eebc3ada66a115ce31ef8565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c814826eebc3ada66a115ce31ef8565">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_InvalidLines&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_a7c814826eebc3ada66a115ce31ef8565_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_a7c814826eebc3ada66a115ce31ef8565_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ad5156a37551b3b5d04ad4e90738fcea1" name="ad5156a37551b3b5d04ad4e90738fcea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5156a37551b3b5d04ad4e90738fcea1">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_NonexistentFile&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_ad5156a37551b3b5d04ad4e90738fcea1_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_ad5156a37551b3b5d04ad4e90738fcea1_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a82dd27b516713a3aafadbdc1dd78d9cd" name="a82dd27b516713a3aafadbdc1dd78d9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dd27b516713a3aafadbdc1dd78d9cd">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_Reload&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_a82dd27b516713a3aafadbdc1dd78d9cd_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_a82dd27b516713a3aafadbdc1dd78d9cd_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="afe66f12e8b7ccd4a17edd9cb1a1c54c0" name="afe66f12e8b7ccd4a17edd9cb1a1c54c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe66f12e8b7ccd4a17edd9cb1a1c54c0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_TrimSpaces&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_afe66f12e8b7ccd4a17edd9cb1a1c54c0_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_afe66f12e8b7ccd4a17edd9cb1a1c54c0_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a164d6fa8a8d6f7602ceb2864a8b989b1" name="a164d6fa8a8d6f7602ceb2864a8b989b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164d6fa8a8d6f7602ceb2864a8b989b1">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_ValidFile&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_a164d6fa8a8d6f7602ceb2864a8b989b1_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_a164d6fa8a8d6f7602ceb2864a8b989b1_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a0fb11c3e5568177fb5ea1a0b40390401" name="a0fb11c3e5568177fb5ea1a0b40390401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb11c3e5568177fb5ea1a0b40390401">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_LoadFromFile_WithComments&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_a0fb11c3e5568177fb5ea1a0b40390401_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_a0fb11c3e5568177fb5ea1a0b40390401_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ac5fb2ec01b70d53929f6f5333900bbd6" name="ac5fb2ec01b70d53929f6f5333900bbd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fb2ec01b70d53929f6f5333900bbd6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Database_UserExists&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestDatabase_8cpp_ac5fb2ec01b70d53929f6f5333900bbd6_cgraph.png" border="0" usemap="#aTestDatabase_8cpp_ac5fb2ec01b70d53929f6f5333900bbd6_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

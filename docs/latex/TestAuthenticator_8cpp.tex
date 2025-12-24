@@ -1,0 +1,247 @@
+\hypertarget{TestAuthenticator_8cpp}{}\doxysection{Файл tests/\+Test\+Authenticator.cpp}
+\label{TestAuthenticator_8cpp}\index{tests/TestAuthenticator.cpp@{tests/TestAuthenticator.cpp}}
+
+
+Модульные тесты для класса \mbox{\hyperlink{classAuthenticator}{Authenticator}}.  
+
+
+{\ttfamily \#include $<$Unit\+Test++/\+Unit\+Test++.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../src/\+Authenticator.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Граф включаемых заголовочных файлов для Test\+Authenticator.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a88608af10ad7b14e8185aca18de619d1}{TEST}} (Authenticator\+\_\+\+Generate\+Salt\+\_\+\+Format)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_ae1377b702f99099758cded4ac4fadd55}{TEST}} (Authenticator\+\_\+\+Generate\+Salt\+\_\+\+Unique)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a70a99bd87d42f883e49d9f82e68382e4}{TEST}} (Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Correct64)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_ab85d4158497ea98108327ce5c1613943}{TEST}} (Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Correct16)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a9ebaf9e3dcb6c0fb5672ad15386a1c77}{TEST}} (Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Lowercase)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a55698d659821447d33da3b2e4903d8ba}{TEST}} (Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Wrong\+Length)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a564a4bd547b1eacd0a8bf6d557e1be48}{TEST}} (Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Invalid\+Chars)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_ace5a350ff4d6b61d3329c0cf94868979}{TEST}} (Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Empty)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a647cc0f272303102a591553f709d4ead}{TEST}} (Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Valid\+Input)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a4d21113f54f5b5617d4f5693ee626b8e}{TEST}} (Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Deterministic)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_ab0af496f910152c55152a1ed115e1629}{TEST}} (Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Empty\+Password)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_aef23cdab728c3838a13b2dda1e7f6d88}{TEST}} (Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Long\+Password)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a7fe8bc5d71eb7340764742669f07c7d0}{TEST}} (Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Correct)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a38e429d819dc5b10b03a5d144fe8589d}{TEST}} (Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Wrong\+Password)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_aed21790073c9838a00d32dd871037174}{TEST}} (Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Wrong\+Salt)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a4129d5e914f1879d305df554a62e3bd2}{TEST}} (Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Invalid\+Hash\+Format)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a546893d985b9dc8cb76496bdfa2c141f}{TEST}} (Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Case\+Insensitive)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a2a59f4d8c024fda68d9828fce0531602}{TEST}} (Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Different\+Salts\+Produce\+Different\+Hashes)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_a568431034106acf92d9953f0d5e0f484}{TEST}} (Authenticator\+\_\+\+Full\+Auth\+Cycle)
+\item 
+\mbox{\hyperlink{TestAuthenticator_8cpp_abddd3e7b4e4a888fbae5dbe5316f5986}{TEST}} (Authenticator\+\_\+\+Special\+Characters\+In\+Password)
+\item 
+int \mbox{\hyperlink{TestAuthenticator_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Модульные тесты для класса \mbox{\hyperlink{classAuthenticator}{Authenticator}}. 
+
+\begin{DoxyAuthor}{Автор}
+Судариков А.\+В. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{TestAuthenticator_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{TestAuthenticator_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!main@{main}}
+\index{main@{main}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Основная функция 
+
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a4d21113f54f5b5617d4f5693ee626b8e}\label{TestAuthenticator_8cpp_a4d21113f54f5b5617d4f5693ee626b8e}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Deterministic}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 1
+\mbox{\Hypertarget{TestAuthenticator_8cpp_ab0af496f910152c55152a1ed115e1629}\label{TestAuthenticator_8cpp_ab0af496f910152c55152a1ed115e1629}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Empty\+Password}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 2
+\mbox{\Hypertarget{TestAuthenticator_8cpp_aef23cdab728c3838a13b2dda1e7f6d88}\label{TestAuthenticator_8cpp_aef23cdab728c3838a13b2dda1e7f6d88}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Long\+Password}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 3
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a647cc0f272303102a591553f709d4ead}\label{TestAuthenticator_8cpp_a647cc0f272303102a591553f709d4ead}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Calculate\+SHA256\+\_\+\+Valid\+Input}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 4
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a568431034106acf92d9953f0d5e0f484}\label{TestAuthenticator_8cpp_a568431034106acf92d9953f0d5e0f484}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Full\+Auth\+Cycle}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 5
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a88608af10ad7b14e8185aca18de619d1}\label{TestAuthenticator_8cpp_a88608af10ad7b14e8185aca18de619d1}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Generate\+Salt\+\_\+\+Format}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 6
+\mbox{\Hypertarget{TestAuthenticator_8cpp_ae1377b702f99099758cded4ac4fadd55}\label{TestAuthenticator_8cpp_ae1377b702f99099758cded4ac4fadd55}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Generate\+Salt\+\_\+\+Unique}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 7
+\mbox{\Hypertarget{TestAuthenticator_8cpp_ab85d4158497ea98108327ce5c1613943}\label{TestAuthenticator_8cpp_ab85d4158497ea98108327ce5c1613943}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Correct16}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 8
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a70a99bd87d42f883e49d9f82e68382e4}\label{TestAuthenticator_8cpp_a70a99bd87d42f883e49d9f82e68382e4}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Correct64}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 9
+\mbox{\Hypertarget{TestAuthenticator_8cpp_ace5a350ff4d6b61d3329c0cf94868979}\label{TestAuthenticator_8cpp_ace5a350ff4d6b61d3329c0cf94868979}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Empty}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 10
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a564a4bd547b1eacd0a8bf6d557e1be48}\label{TestAuthenticator_8cpp_a564a4bd547b1eacd0a8bf6d557e1be48}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Invalid\+Chars}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 11
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a9ebaf9e3dcb6c0fb5672ad15386a1c77}\label{TestAuthenticator_8cpp_a9ebaf9e3dcb6c0fb5672ad15386a1c77}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Lowercase}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 12
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a55698d659821447d33da3b2e4903d8ba}\label{TestAuthenticator_8cpp_a55698d659821447d33da3b2e4903d8ba}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Is\+Valid\+Hex\+String\+\_\+\+Wrong\+Length}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 13
+\mbox{\Hypertarget{TestAuthenticator_8cpp_abddd3e7b4e4a888fbae5dbe5316f5986}\label{TestAuthenticator_8cpp_abddd3e7b4e4a888fbae5dbe5316f5986}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Special\+Characters\+In\+Password}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 14
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a546893d985b9dc8cb76496bdfa2c141f}\label{TestAuthenticator_8cpp_a546893d985b9dc8cb76496bdfa2c141f}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [15/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Case\+Insensitive}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 15
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a7fe8bc5d71eb7340764742669f07c7d0}\label{TestAuthenticator_8cpp_a7fe8bc5d71eb7340764742669f07c7d0}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [16/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Correct}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 16
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a2a59f4d8c024fda68d9828fce0531602}\label{TestAuthenticator_8cpp_a2a59f4d8c024fda68d9828fce0531602}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [17/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Different\+Salts\+Produce\+Different\+Hashes}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 17
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a4129d5e914f1879d305df554a62e3bd2}\label{TestAuthenticator_8cpp_a4129d5e914f1879d305df554a62e3bd2}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [18/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Invalid\+Hash\+Format}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 18
+\mbox{\Hypertarget{TestAuthenticator_8cpp_a38e429d819dc5b10b03a5d144fe8589d}\label{TestAuthenticator_8cpp_a38e429d819dc5b10b03a5d144fe8589d}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [19/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Wrong\+Password}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 19
+\mbox{\Hypertarget{TestAuthenticator_8cpp_aed21790073c9838a00d32dd871037174}\label{TestAuthenticator_8cpp_aed21790073c9838a00d32dd871037174}} 
+\index{TestAuthenticator.cpp@{TestAuthenticator.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestAuthenticator.cpp@{TestAuthenticator.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [20/20]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Authenticator\+\_\+\+Verify\+Hash\+\_\+\+Wrong\+Salt}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 20

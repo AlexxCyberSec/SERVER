@@ -1,0 +1,29 @@
+\hypertarget{VectorProcessor_8h_source}{}\doxysection{Vector\+Processor.\+h}
+\label{VectorProcessor_8h_source}\index{src/VectorProcessor.h@{src/VectorProcessor.h}}
+\mbox{\hyperlink{VectorProcessor_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef VECTORPROCESSOR\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define VECTORPROCESSOR\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <climits>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classVectorProcessor}{VectorProcessor}} \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \textcolor{keyword}{static} int32\_t \mbox{\hyperlink{classVectorProcessor_a023d3d033ce7d0cbeb3dceb6855254e5}{calculateSum}}(\textcolor{keyword}{const} std::vector<int32\_t>\& vector);}
+\DoxyCodeLine{27     }
+\DoxyCodeLine{33     \textcolor{keyword}{static} std::vector<int32\_t> \mbox{\hyperlink{classVectorProcessor_aed88308164d24d51d92a0b1b9fef28c9}{processVectors}}(}
+\DoxyCodeLine{34         \textcolor{keyword}{const} std::vector<std::vector<int32\_t>>\& vectors);}
+\DoxyCodeLine{35     }
+\DoxyCodeLine{36 \textcolor{keyword}{private}:}
+\DoxyCodeLine{37     \textcolor{keyword}{static} \textcolor{keyword}{const} int32\_t \mbox{\hyperlink{classVectorProcessor_aac60ca07336166bccca882106a2c830f}{MAX\_INT32}} = INT\_MAX;      \textcolor{comment}{// 2\string^31-\/1}}
+\DoxyCodeLine{38     \textcolor{keyword}{static} \textcolor{keyword}{const} int32\_t \mbox{\hyperlink{classVectorProcessor_a621c62ad3250c6e4f779289638b38150}{MIN\_INT32}} = INT\_MIN;      \textcolor{comment}{// -\/2\string^31}}
+\DoxyCodeLine{39     }
+\DoxyCodeLine{46     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classVectorProcessor_afff015533f17ed59a9d97c983978b3de}{willOverflowAdd}}(int32\_t a, int32\_t b);}
+\DoxyCodeLine{47 \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// VECTORPROCESSOR\_H}}
+
+\end{DoxyCode}

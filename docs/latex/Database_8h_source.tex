@@ -1,0 +1,28 @@
+\hypertarget{Database_8h_source}{}\doxysection{Database.\+h}
+\label{Database_8h_source}\index{src/Database.h@{src/Database.h}}
+\mbox{\hyperlink{Database_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef DATABASE\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define DATABASE\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classDatabase}{Database}} \{}
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     std::unordered\_map<std::string, std::string> \mbox{\hyperlink{classDatabase_a234a746c1df2e5e3f5114c60c53e3ae0}{clients\_}}; \textcolor{comment}{// login -\/> password (open text)}}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classDatabase_a273bf69f3fa1ccfb4ceaf34f6cb2cc07}{loadFromFile}}(\textcolor{keyword}{const} std::string\& filename);}
+\DoxyCodeLine{29     }
+\DoxyCodeLine{35     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classDatabase_a95a1352bb6fde55da13337923799f98c}{userExists}}(\textcolor{keyword}{const} std::string\& login) \textcolor{keyword}{const};}
+\DoxyCodeLine{36     }
+\DoxyCodeLine{42     std::string \mbox{\hyperlink{classDatabase_a3ab40ca6f2e2b09ecd4763f7e0f34a22}{getPassword}}(\textcolor{keyword}{const} std::string\& login) \textcolor{keyword}{const};}
+\DoxyCodeLine{43     }
+\DoxyCodeLine{48     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classDatabase_a89db9d92633cceade7fa0d95fe417549}{getClientCount}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classDatabase_a234a746c1df2e5e3f5114c60c53e3ae0}{clients\_}}.size(); \}}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DATABASE\_H}}
+
+\end{DoxyCode}

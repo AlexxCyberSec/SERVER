@@ -1,0 +1,68 @@
+\hypertarget{Server_8cpp}{}\doxysection{Файл src/\+Server.cpp}
+\label{Server_8cpp}\index{src/Server.cpp@{src/Server.cpp}}
+{\ttfamily \#include \char`\"{}Server.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cerrno$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+Граф включаемых заголовочных файлов для Server.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{Server_8cpp_a4c07aa66351154265edb5a31075aa8ca}{le32\+\_\+to\+\_\+host}} (uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Конвертировать из little-\/endian в хостовый порядок \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{Server_8cpp_a2a3690a1e26496e527aed5a98570038c}{host\+\_\+to\+\_\+le32}} (uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Конвертировать хостовый порядок в little-\/endian. \end{DoxyCompactList}\item 
+static int32\+\_\+t \mbox{\hyperlink{Server_8cpp_a1948ebd2368e899c176d09807bd2bdbd}{le32\+\_\+to\+\_\+host\+\_\+int}} (int32\+\_\+t value)
+\item 
+static int32\+\_\+t \mbox{\hyperlink{Server_8cpp_af052bd0bba1c6e6c3d1c4b469c8aa8db}{host\+\_\+to\+\_\+le32\+\_\+int}} (int32\+\_\+t value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{Server_8cpp_a2a3690a1e26496e527aed5a98570038c}\label{Server_8cpp_a2a3690a1e26496e527aed5a98570038c}} 
+\index{Server.cpp@{Server.cpp}!host\_to\_le32@{host\_to\_le32}}
+\index{host\_to\_le32@{host\_to\_le32}!Server.cpp@{Server.cpp}}
+\doxysubsubsection{\texorpdfstring{host\_to\_le32()}{host\_to\_le32()}}
+{\footnotesize\ttfamily static uint32\+\_\+t host\+\_\+to\+\_\+le32 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Конвертировать хостовый порядок в little-\/endian. 
+
+Граф вызова функции\+:
+% FIG 1
+\mbox{\Hypertarget{Server_8cpp_af052bd0bba1c6e6c3d1c4b469c8aa8db}\label{Server_8cpp_af052bd0bba1c6e6c3d1c4b469c8aa8db}} 
+\index{Server.cpp@{Server.cpp}!host\_to\_le32\_int@{host\_to\_le32\_int}}
+\index{host\_to\_le32\_int@{host\_to\_le32\_int}!Server.cpp@{Server.cpp}}
+\doxysubsubsection{\texorpdfstring{host\_to\_le32\_int()}{host\_to\_le32\_int()}}
+{\footnotesize\ttfamily static int32\+\_\+t host\+\_\+to\+\_\+le32\+\_\+int (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызовов\+:
+% FIG 2
+Граф вызова функции\+:
+% FIG 3
+\mbox{\Hypertarget{Server_8cpp_a4c07aa66351154265edb5a31075aa8ca}\label{Server_8cpp_a4c07aa66351154265edb5a31075aa8ca}} 
+\index{Server.cpp@{Server.cpp}!le32\_to\_host@{le32\_to\_host}}
+\index{le32\_to\_host@{le32\_to\_host}!Server.cpp@{Server.cpp}}
+\doxysubsubsection{\texorpdfstring{le32\_to\_host()}{le32\_to\_host()}}
+{\footnotesize\ttfamily static uint32\+\_\+t le32\+\_\+to\+\_\+host (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Конвертировать из little-\/endian в хостовый порядок 
+
+Граф вызова функции\+:
+% FIG 4
+\mbox{\Hypertarget{Server_8cpp_a1948ebd2368e899c176d09807bd2bdbd}\label{Server_8cpp_a1948ebd2368e899c176d09807bd2bdbd}} 
+\index{Server.cpp@{Server.cpp}!le32\_to\_host\_int@{le32\_to\_host\_int}}
+\index{le32\_to\_host\_int@{le32\_to\_host\_int}!Server.cpp@{Server.cpp}}
+\doxysubsubsection{\texorpdfstring{le32\_to\_host\_int()}{le32\_to\_host\_int()}}
+{\footnotesize\ttfamily static int32\+\_\+t le32\+\_\+to\+\_\+host\+\_\+int (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Граф вызовов\+:
+% FIG 5
+Граф вызова функции\+:
+% FIG 6

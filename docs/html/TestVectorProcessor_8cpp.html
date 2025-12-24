@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Сервер: Файл tests/TestVectorProcessor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Сервер<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа по ТиМП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл TestVectorProcessor.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модульные тесты для класса <a class="el" href="classVectorProcessor.html" title="Класс обработки векторов">VectorProcessor</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;/usr/include/UnitTest++/UnitTest++.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="VectorProcessor_8h_source.html">../src/VectorProcessor.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;climits&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для TestVectorProcessor.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp__incl.png" border="0" usemap="#atests_2TestVectorProcessor_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:afbe4f84358f0c70d2a6403dd32575241"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#afbe4f84358f0c70d2a6403dd32575241">TEST</a> (CalculateSum_EmptyVector)</td></tr>
+<tr class="separator:afbe4f84358f0c70d2a6403dd32575241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f0bbe404be8f3cac807aa7b06498ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#ae7f0bbe404be8f3cac807aa7b06498ba">TEST</a> (CalculateSum_SingleElement)</td></tr>
+<tr class="separator:ae7f0bbe404be8f3cac807aa7b06498ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f6288633b0d308ab6a6c94e0b2661d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#ac9f6288633b0d308ab6a6c94e0b2661d">TEST</a> (CalculateSum_MultipleElements)</td></tr>
+<tr class="separator:ac9f6288633b0d308ab6a6c94e0b2661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ac8d789b3c525afe08b22f3f6956b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#a07ac8d789b3c525afe08b22f3f6956b2">TEST</a> (CalculateSum_NegativeNumbers)</td></tr>
+<tr class="separator:a07ac8d789b3c525afe08b22f3f6956b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a22bb0b6e9642ba95152d10d9db0dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#a26a22bb0b6e9642ba95152d10d9db0dc">TEST</a> (CalculateSum_MixedSigns)</td></tr>
+<tr class="separator:a26a22bb0b6e9642ba95152d10d9db0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f45e45570375ded8107b8bd71a14e22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#a5f45e45570375ded8107b8bd71a14e22">TEST</a> (CalculateSum_MaxInt32)</td></tr>
+<tr class="separator:a5f45e45570375ded8107b8bd71a14e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f800a09b0eb0b9369a495fac563090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#a22f800a09b0eb0b9369a495fac563090">TEST</a> (CalculateSum_MinInt32)</td></tr>
+<tr class="separator:a22f800a09b0eb0b9369a495fac563090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe6a9f7036b88c1d87a063fcedc797f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#aefe6a9f7036b88c1d87a063fcedc797f">TEST</a> (CalculateSum_MaxPlusZero)</td></tr>
+<tr class="separator:aefe6a9f7036b88c1d87a063fcedc797f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbea7e8339fed2e0b0b6c41c89af1134"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#adbea7e8339fed2e0b0b6c41c89af1134">TEST</a> (CalculateSum_NearMaxNoOverflow)</td></tr>
+<tr class="separator:adbea7e8339fed2e0b0b6c41c89af1134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d9cd281a725a7800936bfb4b4abb2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#a08d9cd281a725a7800936bfb4b4abb2c">TEST</a> (CalculateSum_OverflowPositive)</td></tr>
+<tr class="separator:a08d9cd281a725a7800936bfb4b4abb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9c1b20b0b7ae0bab65662225342ff8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#afd9c1b20b0b7ae0bab65662225342ff8">TEST</a> (CalculateSum_OverflowNegative)</td></tr>
+<tr class="separator:afd9c1b20b0b7ae0bab65662225342ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae399e229ed5e8e23a2547a4ba4591dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#aae399e229ed5e8e23a2547a4ba4591dc">TEST</a> (CalculateSum_CourseExample)</td></tr>
+<tr class="separator:aae399e229ed5e8e23a2547a4ba4591dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484b568c3db5701cb017dc8e8b80f415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#a484b568c3db5701cb017dc8e8b80f415">TEST</a> (CalculateSum_ZeroVector)</td></tr>
+<tr class="separator:a484b568c3db5701cb017dc8e8b80f415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestVectorProcessor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Модульные тесты для класса <a class="el" href="classVectorProcessor.html" title="Класс обработки векторов">VectorProcessor</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Судариков А.В. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025 </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae399e229ed5e8e23a2547a4ba4591dc" name="aae399e229ed5e8e23a2547a4ba4591dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae399e229ed5e8e23a2547a4ba4591dc">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_CourseExample&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_aae399e229ed5e8e23a2547a4ba4591dc_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_aae399e229ed5e8e23a2547a4ba4591dc_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="afbe4f84358f0c70d2a6403dd32575241" name="afbe4f84358f0c70d2a6403dd32575241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe4f84358f0c70d2a6403dd32575241">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_EmptyVector&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_afbe4f84358f0c70d2a6403dd32575241_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_afbe4f84358f0c70d2a6403dd32575241_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a5f45e45570375ded8107b8bd71a14e22" name="a5f45e45570375ded8107b8bd71a14e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f45e45570375ded8107b8bd71a14e22">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_MaxInt32&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_a5f45e45570375ded8107b8bd71a14e22_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_a5f45e45570375ded8107b8bd71a14e22_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aefe6a9f7036b88c1d87a063fcedc797f" name="aefe6a9f7036b88c1d87a063fcedc797f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe6a9f7036b88c1d87a063fcedc797f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_MaxPlusZero&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_aefe6a9f7036b88c1d87a063fcedc797f_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_aefe6a9f7036b88c1d87a063fcedc797f_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a22f800a09b0eb0b9369a495fac563090" name="a22f800a09b0eb0b9369a495fac563090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f800a09b0eb0b9369a495fac563090">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_MinInt32&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_a22f800a09b0eb0b9369a495fac563090_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_a22f800a09b0eb0b9369a495fac563090_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a26a22bb0b6e9642ba95152d10d9db0dc" name="a26a22bb0b6e9642ba95152d10d9db0dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a22bb0b6e9642ba95152d10d9db0dc">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_MixedSigns&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_a26a22bb0b6e9642ba95152d10d9db0dc_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_a26a22bb0b6e9642ba95152d10d9db0dc_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ac9f6288633b0d308ab6a6c94e0b2661d" name="ac9f6288633b0d308ab6a6c94e0b2661d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f6288633b0d308ab6a6c94e0b2661d">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_MultipleElements&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_ac9f6288633b0d308ab6a6c94e0b2661d_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_ac9f6288633b0d308ab6a6c94e0b2661d_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="adbea7e8339fed2e0b0b6c41c89af1134" name="adbea7e8339fed2e0b0b6c41c89af1134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbea7e8339fed2e0b0b6c41c89af1134">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_NearMaxNoOverflow&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_adbea7e8339fed2e0b0b6c41c89af1134_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_adbea7e8339fed2e0b0b6c41c89af1134_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a07ac8d789b3c525afe08b22f3f6956b2" name="a07ac8d789b3c525afe08b22f3f6956b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ac8d789b3c525afe08b22f3f6956b2">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_NegativeNumbers&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_a07ac8d789b3c525afe08b22f3f6956b2_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_a07ac8d789b3c525afe08b22f3f6956b2_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="afd9c1b20b0b7ae0bab65662225342ff8" name="afd9c1b20b0b7ae0bab65662225342ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9c1b20b0b7ae0bab65662225342ff8">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_OverflowNegative&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_afd9c1b20b0b7ae0bab65662225342ff8_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_afd9c1b20b0b7ae0bab65662225342ff8_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a08d9cd281a725a7800936bfb4b4abb2c" name="a08d9cd281a725a7800936bfb4b4abb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d9cd281a725a7800936bfb4b4abb2c">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_OverflowPositive&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_a08d9cd281a725a7800936bfb4b4abb2c_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_a08d9cd281a725a7800936bfb4b4abb2c_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae7f0bbe404be8f3cac807aa7b06498ba" name="ae7f0bbe404be8f3cac807aa7b06498ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f0bbe404be8f3cac807aa7b06498ba">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_SingleElement&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_ae7f0bbe404be8f3cac807aa7b06498ba_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_ae7f0bbe404be8f3cac807aa7b06498ba_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a484b568c3db5701cb017dc8e8b80f415" name="a484b568c3db5701cb017dc8e8b80f415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484b568c3db5701cb017dc8e8b80f415">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CalculateSum_ZeroVector&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestVectorProcessor_8cpp_a484b568c3db5701cb017dc8e8b80f415_cgraph.png" border="0" usemap="#aTestVectorProcessor_8cpp_a484b568c3db5701cb017dc8e8b80f415_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

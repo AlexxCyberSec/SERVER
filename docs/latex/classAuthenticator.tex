@@ -1,0 +1,119 @@
+\hypertarget{classAuthenticator}{}\doxysection{Класс Authenticator}
+\label{classAuthenticator}\index{Authenticator@{Authenticator}}
+
+
+Класс аутентификации  
+
+
+
+
+{\ttfamily \#include $<$Authenticator.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classAuthenticator_aeb0de37f54c3fad7f3c5b5a6a3b09d91}{generate\+Salt}} ()
+\begin{DoxyCompactList}\small\item\em Сгенерировать соль \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classAuthenticator_a214a9481e46fc0cc61aae3eb2143df51}{calculate\+SHA256}} (const std\+::string \&salt, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Вычислить SHA256 хеш от соли и пароля \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classAuthenticator_a09d4d2ef72481a6c2bba6ea6cf9031a6}{verify\+Hash}} (const std\+::string \&received\+Hash, const std\+::string \&salt, const std\+::string \&stored\+Password)
+\begin{DoxyCompactList}\small\item\em Проверить хеш \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classAuthenticator_acd786c7213e7bdf858f92fb7ce70e015}{is\+Valid\+Hex\+String}} (const std\+::string \&hex\+String, size\+\_\+t expected\+Length)
+\begin{DoxyCompactList}\small\item\em Проверить hex строку \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс аутентификации 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classAuthenticator_a214a9481e46fc0cc61aae3eb2143df51}\label{classAuthenticator_a214a9481e46fc0cc61aae3eb2143df51}} 
+\index{Authenticator@{Authenticator}!calculateSHA256@{calculateSHA256}}
+\index{calculateSHA256@{calculateSHA256}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{calculateSHA256()}{calculateSHA256()}}
+{\footnotesize\ttfamily std\+::string Authenticator\+::calculate\+SHA256 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{salt,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычислить SHA256 хеш от соли и пароля 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em salt} & Соль \\
+\hline
+{\em password} & Пароль в открытом виде \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хеш в hex формате (64 символа) 
+\end{DoxyReturn}
+Граф вызова функции\+:
+% FIG 0
+\mbox{\Hypertarget{classAuthenticator_aeb0de37f54c3fad7f3c5b5a6a3b09d91}\label{classAuthenticator_aeb0de37f54c3fad7f3c5b5a6a3b09d91}} 
+\index{Authenticator@{Authenticator}!generateSalt@{generateSalt}}
+\index{generateSalt@{generateSalt}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{generateSalt()}{generateSalt()}}
+{\footnotesize\ttfamily std\+::string Authenticator\+::generate\+Salt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Сгенерировать соль 
+
+\begin{DoxyReturn}{Возвращает}
+Соль в hex формате (16 символов) 
+\end{DoxyReturn}
+Граф вызова функции\+:
+% FIG 1
+\mbox{\Hypertarget{classAuthenticator_acd786c7213e7bdf858f92fb7ce70e015}\label{classAuthenticator_acd786c7213e7bdf858f92fb7ce70e015}} 
+\index{Authenticator@{Authenticator}!isValidHexString@{isValidHexString}}
+\index{isValidHexString@{isValidHexString}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{isValidHexString()}{isValidHexString()}}
+{\footnotesize\ttfamily bool Authenticator\+::is\+Valid\+Hex\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{hex\+String,  }\item[{size\+\_\+t}]{expected\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверить hex строку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em hex\+String} & Строка \\
+\hline
+{\em expected\+Length} & Ожидаемая длина \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ строка корректна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+% FIG 2
+\mbox{\Hypertarget{classAuthenticator_a09d4d2ef72481a6c2bba6ea6cf9031a6}\label{classAuthenticator_a09d4d2ef72481a6c2bba6ea6cf9031a6}} 
+\index{Authenticator@{Authenticator}!verifyHash@{verifyHash}}
+\index{verifyHash@{verifyHash}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{verifyHash()}{verifyHash()}}
+{\footnotesize\ttfamily bool Authenticator\+::verify\+Hash (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{received\+Hash,  }\item[{const std\+::string \&}]{salt,  }\item[{const std\+::string \&}]{stored\+Password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверить хеш 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em received\+Hash} & Хеш от клиента \\
+\hline
+{\em salt} & Соль \\
+\hline
+{\em stored\+Password} & Пароль в открытом виде из базы \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ хеши совпадают 
+\end{DoxyReturn}
+Граф вызовов\+:
+% FIG 3
+Граф вызова функции\+:
+% FIG 4
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Authenticator_8h}{Authenticator.\+h}}\item 
+src/\mbox{\hyperlink{Authenticator_8cpp}{Authenticator.\+cpp}}\end{DoxyCompactItemize}

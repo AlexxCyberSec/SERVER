@@ -1,0 +1,35 @@
+\hypertarget{Logger_8h_source}{}\doxysection{Logger.\+h}
+\label{Logger_8h_source}\index{src/Logger.h@{src/Logger.h}}
+\mbox{\hyperlink{Logger_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef LOGGER\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define LOGGER\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Config_8h}{Config.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classLogger}{Logger}} \{}
+\DoxyCodeLine{21 \textcolor{keyword}{private}:}
+\DoxyCodeLine{22     std::string \mbox{\hyperlink{classLogger_acbab2d537fc77e2c29bb33b4a0c76343}{logFilePath\_}};}
+\DoxyCodeLine{23     std::ofstream \mbox{\hyperlink{classLogger_a5c9ddc336e7adfd7e8d1a85c93778127}{logFile\_}};}
+\DoxyCodeLine{24     }
+\DoxyCodeLine{25     std::string \mbox{\hyperlink{classLogger_abffd3a5b9e2cfb2abc4f2c33b7694d6c}{levelToString}}(\mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{LogLevel}} level) \textcolor{keyword}{const};}
+\DoxyCodeLine{26     std::string \mbox{\hyperlink{classLogger_afa6fae2318225a087949a2e2f408144c}{getCurrentDateTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27     }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{classLogger_a1b6f85fa59af240a94e8d3de35b7c0cf}{Logger}}(\textcolor{keyword}{const} std::string\& filePath);}
+\DoxyCodeLine{34     }
+\DoxyCodeLine{38     \mbox{\hyperlink{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}{\string~Logger}}();}
+\DoxyCodeLine{39     }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLogger_aae6641d55199c941cf06d7d3fe25742b}{log}}(\mbox{\hyperlink{Config_8h_aca1fd1d8935433e6ba2e3918214e07f9}{LogLevel}} level, \textcolor{keyword}{const} std::string\& message, }
+\DoxyCodeLine{47              \textcolor{keyword}{const} std::string\& details = \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLogger_ae027aff232c4965d2fa11f6b84855d2e}{logSystemError}}(\textcolor{keyword}{const} std::string\& context);}
+\DoxyCodeLine{54 \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LOGGER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,16 @@
+digraph "TEST"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Config::getClientDbPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#a62746914a3654b276f281128a4c60c48",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Config::getLogFilePath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#a1e1791f34e0f8c0e94d7c0906f523e8c",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Config::getPort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#a70684c8eddf0fe06002edba733f40e88",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Config::setDefaults",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConfig.html#aee39c9d565d914a287f87cf476c4d5ef",tooltip="Установка значений по умолчанию"];
+}

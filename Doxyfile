@@ -1,0 +1,39 @@
+PROJECT_NAME           = "Сервер"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Курсовая работа по ТиМП"
+OUTPUT_LANGUAGE        = Russian
+OUTPUT_DIRECTORY       = docs
+
+INPUT                  = src tests
+RECURSIVE              = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_ALL            = YES
+
+# Кодировка исходников
+INPUT_ENCODING         = UTF-8
+
+# Показать файлы, пространства имён
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
+
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# Для LaTeX: поддержка русского языка
+LATEX_CMD_NAME         = latex
+PDFLATEX_CMD_NAME      = pdflatex
+USE_PDFLATEX           = YES
+
+LATEX_EXTRA_STYLESHEET = ./russian.sty
+
+EXCLUDE                = build/ .git/ docs/

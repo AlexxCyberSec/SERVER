@@ -50,16 +50,21 @@ public:
      */
     void setDefaults();
     
-    // Геттеры
-    std::string getClientDbPath() const { return clientDbPath_; }
-    std::string getLogFilePath() const { return logFilePath_; }
-    uint16_t getPort() const { return port_; }
+    // Геттеры (только объявления)
+    const std::string& getClientDbPath() const;
+    const std::string& getLogFilePath() const;
+    uint16_t getPort() const;
     
     /**
      * @brief Показать справку
      * @param programName Имя программы
      */
-    static void showHelp(const char* programName);
+    void showHelp(const char* programName);
+    
+    /**
+     * @brief Показать информацию о версии программы
+     */
+    void showVersion();
 };
 
 #endif // CONFIG_H

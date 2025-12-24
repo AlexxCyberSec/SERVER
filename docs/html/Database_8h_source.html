@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Сервер: Исходный файл src/Database.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Сервер<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа по ТиМП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Database.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Database_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef DATABASE_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define DATABASE_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classDatabase.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classDatabase.html">Database</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classDatabase.html#a234a746c1df2e5e3f5114c60c53e3ae0">   20</a></span>    std::unordered_map&lt;std::string, std::string&gt; <a class="code hl_variable" href="classDatabase.html#a234a746c1df2e5e3f5114c60c53e3ae0">clients_</a>; <span class="comment">// login -&gt; password (open text)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDatabase.html#a273bf69f3fa1ccfb4ceaf34f6cb2cc07">loadFromFile</a>(<span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDatabase.html#a95a1352bb6fde55da13337923799f98c">userExists</a>(<span class="keyword">const</span> std::string&amp; login) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::string <a class="code hl_function" href="classDatabase.html#a3ab40ca6f2e2b09ecd4763f7e0f34a22">getPassword</a>(<span class="keyword">const</span> std::string&amp; login) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classDatabase.html#a89db9d92633cceade7fa0d95fe417549">   48</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classDatabase.html#a89db9d92633cceade7fa0d95fe417549">getClientCount</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classDatabase.html#a234a746c1df2e5e3f5114c60c53e3ae0">clients_</a>.size(); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// DATABASE_H</span></div>
+<div class="ttc" id="aclassDatabase_html"><div class="ttname"><a href="classDatabase.html">Database</a></div><div class="ttdoc">Класс базы данных клиентов</div><div class="ttdef"><b>Definition:</b> Database.h:18</div></div>
+<div class="ttc" id="aclassDatabase_html_a234a746c1df2e5e3f5114c60c53e3ae0"><div class="ttname"><a href="classDatabase.html#a234a746c1df2e5e3f5114c60c53e3ae0">Database::clients_</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::string &gt; clients_</div><div class="ttdef"><b>Definition:</b> Database.h:20</div></div>
+<div class="ttc" id="aclassDatabase_html_a273bf69f3fa1ccfb4ceaf34f6cb2cc07"><div class="ttname"><a href="classDatabase.html#a273bf69f3fa1ccfb4ceaf34f6cb2cc07">Database::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;filename)</div><div class="ttdoc">Загрузить базу из файла</div><div class="ttdef"><b>Definition:</b> Database.cpp:8</div></div>
+<div class="ttc" id="aclassDatabase_html_a3ab40ca6f2e2b09ecd4763f7e0f34a22"><div class="ttname"><a href="classDatabase.html#a3ab40ca6f2e2b09ecd4763f7e0f34a22">Database::getPassword</a></div><div class="ttdeci">std::string getPassword(const std::string &amp;login) const</div><div class="ttdoc">Получить пароль пользователя</div><div class="ttdef"><b>Definition:</b> Database.cpp:67</div></div>
+<div class="ttc" id="aclassDatabase_html_a89db9d92633cceade7fa0d95fe417549"><div class="ttname"><a href="classDatabase.html#a89db9d92633cceade7fa0d95fe417549">Database::getClientCount</a></div><div class="ttdeci">size_t getClientCount() const</div><div class="ttdoc">Получить количество клиентов</div><div class="ttdef"><b>Definition:</b> Database.h:48</div></div>
+<div class="ttc" id="aclassDatabase_html_a95a1352bb6fde55da13337923799f98c"><div class="ttname"><a href="classDatabase.html#a95a1352bb6fde55da13337923799f98c">Database::userExists</a></div><div class="ttdeci">bool userExists(const std::string &amp;login) const</div><div class="ttdoc">Проверить существование пользователя</div><div class="ttdef"><b>Definition:</b> Database.cpp:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

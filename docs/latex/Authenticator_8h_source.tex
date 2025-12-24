@@ -1,0 +1,28 @@
+\hypertarget{Authenticator_8h_source}{}\doxysection{Authenticator.\+h}
+\label{Authenticator_8h_source}\index{src/Authenticator.h@{src/Authenticator.h}}
+\mbox{\hyperlink{Authenticator_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef AUTHENTICATOR\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define AUTHENTICATOR\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{classAuthenticator}{Authenticator}} \{}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \textcolor{keyword}{static} std::string \mbox{\hyperlink{classAuthenticator_aeb0de37f54c3fad7f3c5b5a6a3b09d91}{generateSalt}}();}
+\DoxyCodeLine{24     }
+\DoxyCodeLine{31     \textcolor{keyword}{static} std::string \mbox{\hyperlink{classAuthenticator_a214a9481e46fc0cc61aae3eb2143df51}{calculateSHA256}}(\textcolor{keyword}{const} std::string\& salt, }
+\DoxyCodeLine{32                                        \textcolor{keyword}{const} std::string\& password);}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{41     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classAuthenticator_a09d4d2ef72481a6c2bba6ea6cf9031a6}{verifyHash}}(\textcolor{keyword}{const} std::string\& receivedHash,}
+\DoxyCodeLine{42                           \textcolor{keyword}{const} std::string\& salt,}
+\DoxyCodeLine{43                           \textcolor{keyword}{const} std::string\& storedPassword);}
+\DoxyCodeLine{44     }
+\DoxyCodeLine{51     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classAuthenticator_acd786c7213e7bdf858f92fb7ce70e015}{isValidHexString}}(\textcolor{keyword}{const} std::string\& hexString, }
+\DoxyCodeLine{52                                 \textcolor{keywordtype}{size\_t} expectedLength);}
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// AUTHENTICATOR\_H}}
+
+\end{DoxyCode}

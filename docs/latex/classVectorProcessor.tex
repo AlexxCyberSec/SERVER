@@ -1,0 +1,121 @@
+\hypertarget{classVectorProcessor}{}\doxysection{Класс Vector\+Processor}
+\label{classVectorProcessor}\index{VectorProcessor@{VectorProcessor}}
+
+
+Класс обработки векторов  
+
+
+
+
+{\ttfamily \#include $<$Vector\+Processor.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static int32\+\_\+t \mbox{\hyperlink{classVectorProcessor_a023d3d033ce7d0cbeb3dceb6855254e5}{calculate\+Sum}} (const std\+::vector$<$ int32\+\_\+t $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Вычислить сумму вектора \end{DoxyCompactList}\item 
+static std\+::vector$<$ int32\+\_\+t $>$ \mbox{\hyperlink{classVectorProcessor_aed88308164d24d51d92a0b1b9fef28c9}{process\+Vectors}} (const std\+::vector$<$ std\+::vector$<$ int32\+\_\+t $>$ $>$ \&vectors)
+\begin{DoxyCompactList}\small\item\em Обработать массив векторов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classVectorProcessor_afff015533f17ed59a9d97c983978b3de}{will\+Overflow\+Add}} (int32\+\_\+t a, int32\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Проверить переполнение \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+static const int32\+\_\+t \mbox{\hyperlink{classVectorProcessor_aac60ca07336166bccca882106a2c830f}{MAX\+\_\+\+INT32}} = INT\+\_\+\+MAX
+\item 
+static const int32\+\_\+t \mbox{\hyperlink{classVectorProcessor_a621c62ad3250c6e4f779289638b38150}{MIN\+\_\+\+INT32}} = INT\+\_\+\+MIN
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс обработки векторов 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classVectorProcessor_a023d3d033ce7d0cbeb3dceb6855254e5}\label{classVectorProcessor_a023d3d033ce7d0cbeb3dceb6855254e5}} 
+\index{VectorProcessor@{VectorProcessor}!calculateSum@{calculateSum}}
+\index{calculateSum@{calculateSum}!VectorProcessor@{VectorProcessor}}
+\doxysubsubsection{\texorpdfstring{calculateSum()}{calculateSum()}}
+{\footnotesize\ttfamily int32\+\_\+t Vector\+Processor\+::calculate\+Sum (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int32\+\_\+t $>$ \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычислить сумму вектора 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em vector} & Вектор для обработки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сумма элементов 
+\end{DoxyReturn}
+Граф вызовов\+:
+% FIG 0
+Граф вызова функции\+:
+% FIG 1
+\mbox{\Hypertarget{classVectorProcessor_aed88308164d24d51d92a0b1b9fef28c9}\label{classVectorProcessor_aed88308164d24d51d92a0b1b9fef28c9}} 
+\index{VectorProcessor@{VectorProcessor}!processVectors@{processVectors}}
+\index{processVectors@{processVectors}!VectorProcessor@{VectorProcessor}}
+\doxysubsubsection{\texorpdfstring{processVectors()}{processVectors()}}
+{\footnotesize\ttfamily std\+::vector$<$ int32\+\_\+t $>$ Vector\+Processor\+::process\+Vectors (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int32\+\_\+t $>$ $>$ \&}]{vectors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Обработать массив векторов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em vectors} & Массив векторов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Массив сумм 
+\end{DoxyReturn}
+Граф вызовов\+:
+% FIG 2
+\mbox{\Hypertarget{classVectorProcessor_afff015533f17ed59a9d97c983978b3de}\label{classVectorProcessor_afff015533f17ed59a9d97c983978b3de}} 
+\index{VectorProcessor@{VectorProcessor}!willOverflowAdd@{willOverflowAdd}}
+\index{willOverflowAdd@{willOverflowAdd}!VectorProcessor@{VectorProcessor}}
+\doxysubsubsection{\texorpdfstring{willOverflowAdd()}{willOverflowAdd()}}
+{\footnotesize\ttfamily bool Vector\+Processor\+::will\+Overflow\+Add (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{a,  }\item[{int32\+\_\+t}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Проверить переполнение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & Первое слагаемое \\
+\hline
+{\em b} & Второе слагаемое \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ будет переполнение 
+\end{DoxyReturn}
+Граф вызова функции\+:
+% FIG 3
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classVectorProcessor_aac60ca07336166bccca882106a2c830f}\label{classVectorProcessor_aac60ca07336166bccca882106a2c830f}} 
+\index{VectorProcessor@{VectorProcessor}!MAX\_INT32@{MAX\_INT32}}
+\index{MAX\_INT32@{MAX\_INT32}!VectorProcessor@{VectorProcessor}}
+\doxysubsubsection{\texorpdfstring{MAX\_INT32}{MAX\_INT32}}
+{\footnotesize\ttfamily const int32\+\_\+t Vector\+Processor\+::\+MAX\+\_\+\+INT32 = INT\+\_\+\+MAX\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classVectorProcessor_a621c62ad3250c6e4f779289638b38150}\label{classVectorProcessor_a621c62ad3250c6e4f779289638b38150}} 
+\index{VectorProcessor@{VectorProcessor}!MIN\_INT32@{MIN\_INT32}}
+\index{MIN\_INT32@{MIN\_INT32}!VectorProcessor@{VectorProcessor}}
+\doxysubsubsection{\texorpdfstring{MIN\_INT32}{MIN\_INT32}}
+{\footnotesize\ttfamily const int32\+\_\+t Vector\+Processor\+::\+MIN\+\_\+\+INT32 = INT\+\_\+\+MIN\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{VectorProcessor_8h}{Vector\+Processor.\+h}}\item 
+src/\mbox{\hyperlink{VectorProcessor_8cpp}{Vector\+Processor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+digraph "Server::processVectorData"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Server::processVectorData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Обработать векторные данные"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VectorProcessor::calculateSum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVectorProcessor.html#a023d3d033ce7d0cbeb3dceb6855254e5",tooltip="Вычислить сумму вектора"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VectorProcessor::willOverflowAdd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVectorProcessor.html#afff015533f17ed59a9d97c983978b3de",tooltip="Проверить переполнение"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="host_to_le32_int",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Server_8cpp.html#af052bd0bba1c6e6c3d1c4b469c8aa8db",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="host_to_le32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Server_8cpp.html#a2a3690a1e26496e527aed5a98570038c",tooltip="Конвертировать хостовый порядок в little-endian."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="le32_to_host",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Server_8cpp.html#a4c07aa66351154265edb5a31075aa8ca",tooltip="Конвертировать из little-endian в хостовый порядок"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="le32_to_host_int",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Server_8cpp.html#a1948ebd2368e899c176d09807bd2bdbd",tooltip=" "];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Logger::log",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#aae6641d55199c941cf06d7d3fe25742b",tooltip="Записать сообщение в журнал"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Logger::getCurrentDateTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#afa6fae2318225a087949a2e2f408144c",tooltip=" "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Logger::levelToString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLogger.html#abffd3a5b9e2cfb2abc4f2c33b7694d6c",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Server::recvAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a1ad3512b98ffc21255e3d0605fcbd6b0",tooltip="Получить двоичные данные"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Server::sendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classServer.html#a76cb8b08c171e81211706ad7ba0b31df",tooltip="Отправить двоичные данные"];
+}

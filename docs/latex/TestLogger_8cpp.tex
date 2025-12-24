@@ -1,0 +1,148 @@
+\hypertarget{TestLogger_8cpp}{}\doxysection{Файл tests/\+Test\+Logger.cpp}
+\label{TestLogger_8cpp}\index{tests/TestLogger.cpp@{tests/TestLogger.cpp}}
+
+
+Модульные тесты для класса \mbox{\hyperlink{classLogger}{Logger}}.  
+
+
+{\ttfamily \#include $<$Unit\+Test++/\+Unit\+Test++.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../src/\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Граф включаемых заголовочных файлов для Test\+Logger.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_ac825eb1e23064b77146c4dea09b7dbce}{TEST}} (Logger\+\_\+\+Constructor\+\_\+\+Valid\+File)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a20441a37a534e477a040598b04a0fc48}{TEST}} (Logger\+\_\+\+Log\+\_\+\+Different\+Levels)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_adbad78df511856646a8b85039c562602}{TEST}} (Logger\+\_\+\+Log\+\_\+\+Format)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a64b4bcdaf4cd39f2c7f217ad01edbe4b}{TEST}} (Logger\+\_\+\+Log\+\_\+\+With\+Details)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a829673a24e28fe5e8ae2a2ed6e8eaf9c}{TEST}} (Logger\+\_\+\+Log\+System\+Error)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a1427b81c0d04fc408fc1376c06fd20da}{TEST}} (Logger\+\_\+\+Log\+\_\+\+Empty\+Details)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a147645fa2de7f00c5092744ecf807d6e}{TEST}} (Logger\+\_\+\+Log\+\_\+\+Critical\+To\+Stderr)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_ab588e88043df402da3042d33eff3a332}{TEST}} (Logger\+\_\+\+Console\+Output)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a2b21ea2248af69150a8b92465b42c08e}{TEST}} (Logger\+\_\+\+Destructor)
+\item 
+\mbox{\hyperlink{TestLogger_8cpp_a02e3de4192b269c8dc6388cad6a4f129}{TEST}} (Logger\+\_\+\+Invalid\+File)
+\item 
+int \mbox{\hyperlink{TestLogger_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Модульные тесты для класса \mbox{\hyperlink{classLogger}{Logger}}. 
+
+\begin{DoxyAuthor}{Автор}
+Судариков А.\+В. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{TestLogger_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{TestLogger_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!main@{main}}
+\index{main@{main}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Основная функция 
+
+\mbox{\Hypertarget{TestLogger_8cpp_ab588e88043df402da3042d33eff3a332}\label{TestLogger_8cpp_ab588e88043df402da3042d33eff3a332}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Console\+Output}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 1
+\mbox{\Hypertarget{TestLogger_8cpp_ac825eb1e23064b77146c4dea09b7dbce}\label{TestLogger_8cpp_ac825eb1e23064b77146c4dea09b7dbce}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Constructor\+\_\+\+Valid\+File}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 2
+\mbox{\Hypertarget{TestLogger_8cpp_a2b21ea2248af69150a8b92465b42c08e}\label{TestLogger_8cpp_a2b21ea2248af69150a8b92465b42c08e}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Destructor}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 3
+\mbox{\Hypertarget{TestLogger_8cpp_a02e3de4192b269c8dc6388cad6a4f129}\label{TestLogger_8cpp_a02e3de4192b269c8dc6388cad6a4f129}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Invalid\+File}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 4
+\mbox{\Hypertarget{TestLogger_8cpp_a147645fa2de7f00c5092744ecf807d6e}\label{TestLogger_8cpp_a147645fa2de7f00c5092744ecf807d6e}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Log\+\_\+\+Critical\+To\+Stderr}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 5
+\mbox{\Hypertarget{TestLogger_8cpp_a20441a37a534e477a040598b04a0fc48}\label{TestLogger_8cpp_a20441a37a534e477a040598b04a0fc48}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Log\+\_\+\+Different\+Levels}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 6
+\mbox{\Hypertarget{TestLogger_8cpp_a1427b81c0d04fc408fc1376c06fd20da}\label{TestLogger_8cpp_a1427b81c0d04fc408fc1376c06fd20da}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Log\+\_\+\+Empty\+Details}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 7
+\mbox{\Hypertarget{TestLogger_8cpp_adbad78df511856646a8b85039c562602}\label{TestLogger_8cpp_adbad78df511856646a8b85039c562602}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Log\+\_\+\+Format}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 8
+\mbox{\Hypertarget{TestLogger_8cpp_a64b4bcdaf4cd39f2c7f217ad01edbe4b}\label{TestLogger_8cpp_a64b4bcdaf4cd39f2c7f217ad01edbe4b}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Log\+\_\+\+With\+Details}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 9
+\mbox{\Hypertarget{TestLogger_8cpp_a829673a24e28fe5e8ae2a2ed6e8eaf9c}\label{TestLogger_8cpp_a829673a24e28fe5e8ae2a2ed6e8eaf9c}} 
+\index{TestLogger.cpp@{TestLogger.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestLogger.cpp@{TestLogger.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Logger\+\_\+\+Log\+System\+Error}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 10

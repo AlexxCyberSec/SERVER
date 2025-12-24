@@ -1,0 +1,147 @@
+\hypertarget{TestDatabase_8cpp}{}\doxysection{Файл tests/\+Test\+Database.cpp}
+\label{TestDatabase_8cpp}\index{tests/TestDatabase.cpp@{tests/TestDatabase.cpp}}
+
+
+Модульные тесты для класса \mbox{\hyperlink{classDatabase}{Database}}.  
+
+
+{\ttfamily \#include $<$Unit\+Test++/\+Unit\+Test++.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../src/\+Database.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Граф включаемых заголовочных файлов для Test\+Database.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_a164d6fa8a8d6f7602ceb2864a8b989b1}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+Valid\+File)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_a0fb11c3e5568177fb5ea1a0b40390401}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+With\+Comments)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_a7c814826eebc3ada66a115ce31ef8565}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+Invalid\+Lines)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_ac5fb2ec01b70d53929f6f5333900bbd6}{TEST}} (Database\+\_\+\+User\+Exists)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_af863ff95d6cf15b65489c319044e6f0a}{TEST}} (Database\+\_\+\+Get\+Password)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_aa902d0ab8cbb8181ce2dc598b93c00d6}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+Empty\+File)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_ad5156a37551b3b5d04ad4e90738fcea1}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+Nonexistent\+File)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_a82dd27b516713a3aafadbdc1dd78d9cd}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+Reload)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_afe66f12e8b7ccd4a17edd9cb1a1c54c0}{TEST}} (Database\+\_\+\+Load\+From\+File\+\_\+\+Trim\+Spaces)
+\item 
+\mbox{\hyperlink{TestDatabase_8cpp_a9a2fbe23ffed20404811bf66f573c405}{TEST}} (Database\+\_\+\+Case\+Sensitive)
+\item 
+int \mbox{\hyperlink{TestDatabase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Модульные тесты для класса \mbox{\hyperlink{classDatabase}{Database}}. 
+
+\begin{DoxyAuthor}{Автор}
+Судариков А.\+В. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{TestDatabase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{TestDatabase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!main@{main}}
+\index{main@{main}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Основная функция 
+
+\mbox{\Hypertarget{TestDatabase_8cpp_a9a2fbe23ffed20404811bf66f573c405}\label{TestDatabase_8cpp_a9a2fbe23ffed20404811bf66f573c405}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Case\+Sensitive}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 1
+\mbox{\Hypertarget{TestDatabase_8cpp_af863ff95d6cf15b65489c319044e6f0a}\label{TestDatabase_8cpp_af863ff95d6cf15b65489c319044e6f0a}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Get\+Password}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 2
+\mbox{\Hypertarget{TestDatabase_8cpp_aa902d0ab8cbb8181ce2dc598b93c00d6}\label{TestDatabase_8cpp_aa902d0ab8cbb8181ce2dc598b93c00d6}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+Empty\+File}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 3
+\mbox{\Hypertarget{TestDatabase_8cpp_a7c814826eebc3ada66a115ce31ef8565}\label{TestDatabase_8cpp_a7c814826eebc3ada66a115ce31ef8565}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+Invalid\+Lines}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 4
+\mbox{\Hypertarget{TestDatabase_8cpp_ad5156a37551b3b5d04ad4e90738fcea1}\label{TestDatabase_8cpp_ad5156a37551b3b5d04ad4e90738fcea1}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+Nonexistent\+File}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 5
+\mbox{\Hypertarget{TestDatabase_8cpp_a82dd27b516713a3aafadbdc1dd78d9cd}\label{TestDatabase_8cpp_a82dd27b516713a3aafadbdc1dd78d9cd}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+Reload}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 6
+\mbox{\Hypertarget{TestDatabase_8cpp_afe66f12e8b7ccd4a17edd9cb1a1c54c0}\label{TestDatabase_8cpp_afe66f12e8b7ccd4a17edd9cb1a1c54c0}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+Trim\+Spaces}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 7
+\mbox{\Hypertarget{TestDatabase_8cpp_a164d6fa8a8d6f7602ceb2864a8b989b1}\label{TestDatabase_8cpp_a164d6fa8a8d6f7602ceb2864a8b989b1}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+Valid\+File}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 8
+\mbox{\Hypertarget{TestDatabase_8cpp_a0fb11c3e5568177fb5ea1a0b40390401}\label{TestDatabase_8cpp_a0fb11c3e5568177fb5ea1a0b40390401}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+Load\+From\+File\+\_\+\+With\+Comments}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 9
+\mbox{\Hypertarget{TestDatabase_8cpp_ac5fb2ec01b70d53929f6f5333900bbd6}\label{TestDatabase_8cpp_ac5fb2ec01b70d53929f6f5333900bbd6}} 
+\index{TestDatabase.cpp@{TestDatabase.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TestDatabase.cpp@{TestDatabase.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Database\+\_\+\+User\+Exists}]{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+% FIG 10

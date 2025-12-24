@@ -1,0 +1,176 @@
+\hypertarget{classConfig}{}\doxysection{Класс Config}
+\label{classConfig}\index{Config@{Config}}
+
+
+Класс конфигурации сервера  
+
+
+
+
+{\ttfamily \#include $<$Config.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConfig_abd0c571c116924871e30444b192b792a}{Config}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classConfig_a16172ae32586080565dc11cee8629f01}{parse\+Command\+Line}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Парсинг параметров командной строки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConfig_aee39c9d565d914a287f87cf476c4d5ef}{set\+Defaults}} ()
+\begin{DoxyCompactList}\small\item\em Установка значений по умолчанию \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classConfig_a62746914a3654b276f281128a4c60c48}{get\+Client\+Db\+Path}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classConfig_a1e1791f34e0f8c0e94d7c0906f523e8c}{get\+Log\+File\+Path}} () const
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classConfig_a70684c8eddf0fe06002edba733f40e88}{get\+Port}} () const
+\item 
+void \mbox{\hyperlink{classConfig_a9bc1913287c38988af8e79c5f2dbae19}{show\+Help}} (const char $\ast$program\+Name)
+\begin{DoxyCompactList}\small\item\em Показать справку \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConfig_a077256fc1e5e4d49b3155307c7e5af32}{show\+Version}} ()
+\begin{DoxyCompactList}\small\item\em Показать информацию о версии программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classConfig_a8fd56866c1145a8ec20385cbfd698d2b}{client\+Db\+Path\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classConfig_ab27f64e9cb9266026f0f9e9add86ed5f}{log\+File\+Path\+\_\+}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classConfig_ad94493ff4ec5915fc1da57f775cdd9aa}{port\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс конфигурации сервера 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classConfig_abd0c571c116924871e30444b192b792a}\label{classConfig_abd0c571c116924871e30444b192b792a}} 
+\index{Config@{Config}!Config@{Config}}
+\index{Config@{Config}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{Config()}{Config()}}
+{\footnotesize\ttfamily Config\+::\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор по умолчанию 
+
+Граф вызовов\+:
+% FIG 0
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classConfig_a62746914a3654b276f281128a4c60c48}\label{classConfig_a62746914a3654b276f281128a4c60c48}} 
+\index{Config@{Config}!getClientDbPath@{getClientDbPath}}
+\index{getClientDbPath@{getClientDbPath}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{getClientDbPath()}{getClientDbPath()}}
+{\footnotesize\ttfamily const std\+::string \& Config\+::get\+Client\+Db\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Граф вызова функции\+:
+% FIG 1
+\mbox{\Hypertarget{classConfig_a1e1791f34e0f8c0e94d7c0906f523e8c}\label{classConfig_a1e1791f34e0f8c0e94d7c0906f523e8c}} 
+\index{Config@{Config}!getLogFilePath@{getLogFilePath}}
+\index{getLogFilePath@{getLogFilePath}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{getLogFilePath()}{getLogFilePath()}}
+{\footnotesize\ttfamily const std\+::string \& Config\+::get\+Log\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Граф вызова функции\+:
+% FIG 2
+\mbox{\Hypertarget{classConfig_a70684c8eddf0fe06002edba733f40e88}\label{classConfig_a70684c8eddf0fe06002edba733f40e88}} 
+\index{Config@{Config}!getPort@{getPort}}
+\index{getPort@{getPort}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily uint16\+\_\+t Config\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Граф вызова функции\+:
+% FIG 3
+\mbox{\Hypertarget{classConfig_a16172ae32586080565dc11cee8629f01}\label{classConfig_a16172ae32586080565dc11cee8629f01}} 
+\index{Config@{Config}!parseCommandLine@{parseCommandLine}}
+\index{parseCommandLine@{parseCommandLine}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{parseCommandLine()}{parseCommandLine()}}
+{\footnotesize\ttfamily bool Config\+::parse\+Command\+Line (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Парсинг параметров командной строки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов \\
+\hline
+{\em argv} & Массив аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ успешный парсинг 
+\end{DoxyReturn}
+Граф вызовов\+:
+% FIG 4
+Граф вызова функции\+:
+% FIG 5
+\mbox{\Hypertarget{classConfig_aee39c9d565d914a287f87cf476c4d5ef}\label{classConfig_aee39c9d565d914a287f87cf476c4d5ef}} 
+\index{Config@{Config}!setDefaults@{setDefaults}}
+\index{setDefaults@{setDefaults}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{setDefaults()}{setDefaults()}}
+{\footnotesize\ttfamily void Config\+::set\+Defaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Установка значений по умолчанию 
+
+Граф вызова функции\+:
+% FIG 6
+\mbox{\Hypertarget{classConfig_a9bc1913287c38988af8e79c5f2dbae19}\label{classConfig_a9bc1913287c38988af8e79c5f2dbae19}} 
+\index{Config@{Config}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily void Config\+::show\+Help (\begin{DoxyParamCaption}\item[{const char $\ast$}]{program\+Name }\end{DoxyParamCaption})}
+
+
+
+Показать справку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em program\+Name} & Имя программы \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+% FIG 7
+\mbox{\Hypertarget{classConfig_a077256fc1e5e4d49b3155307c7e5af32}\label{classConfig_a077256fc1e5e4d49b3155307c7e5af32}} 
+\index{Config@{Config}!showVersion@{showVersion}}
+\index{showVersion@{showVersion}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{showVersion()}{showVersion()}}
+{\footnotesize\ttfamily void Config\+::show\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Показать информацию о версии программы 
+
+Граф вызова функции\+:
+% FIG 8
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classConfig_a8fd56866c1145a8ec20385cbfd698d2b}\label{classConfig_a8fd56866c1145a8ec20385cbfd698d2b}} 
+\index{Config@{Config}!clientDbPath\_@{clientDbPath\_}}
+\index{clientDbPath\_@{clientDbPath\_}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{clientDbPath\_}{clientDbPath\_}}
+{\footnotesize\ttfamily std\+::string Config\+::client\+Db\+Path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classConfig_ab27f64e9cb9266026f0f9e9add86ed5f}\label{classConfig_ab27f64e9cb9266026f0f9e9add86ed5f}} 
+\index{Config@{Config}!logFilePath\_@{logFilePath\_}}
+\index{logFilePath\_@{logFilePath\_}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{logFilePath\_}{logFilePath\_}}
+{\footnotesize\ttfamily std\+::string Config\+::log\+File\+Path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classConfig_ad94493ff4ec5915fc1da57f775cdd9aa}\label{classConfig_ad94493ff4ec5915fc1da57f775cdd9aa}} 
+\index{Config@{Config}!port\_@{port\_}}
+\index{port\_@{port\_}!Config@{Config}}
+\doxysubsubsection{\texorpdfstring{port\_}{port\_}}
+{\footnotesize\ttfamily uint16\+\_\+t Config\+::port\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Config_8h}{Config.\+h}}\item 
+src/\mbox{\hyperlink{Config_8cpp}{Config.\+cpp}}\end{DoxyCompactItemize}
